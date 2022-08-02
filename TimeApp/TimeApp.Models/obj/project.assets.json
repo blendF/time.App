@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "C:\\Users\\spahi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\Graniti\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
+      "projectUniqueName": "C:\\Users\\spahi\\Desktop\\time.App-main\\TimeApp\\Time-App\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
       "projectName": "TimeApp.Models",
-      "projectPath": "C:\\Users\\hp\\Desktop\\Graniti\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\Graniti\\TimeApp\\TimeApp.Models\\obj\\",
+      "projectPath": "C:\\Users\\spahi\\Desktop\\time.App-main\\TimeApp\\Time-App\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
+      "packagesPath": "C:\\Users\\spahi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\spahi\\Desktop\\time.App-main\\TimeApp\\Time-App\\TimeApp\\TimeApp.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\spahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
