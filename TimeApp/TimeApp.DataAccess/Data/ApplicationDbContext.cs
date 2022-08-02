@@ -3,8 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TimeApp.Models.ViewModels;
 
-namespace TimeApp.Data
+namespace TimeApp.DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
@@ -12,5 +13,13 @@ namespace TimeApp.Data
             : base(options)
         {
         }
+
+        public DbSet<Role> Roles { get; set; }
+
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<InterView> InterViews { get; set; }
+
+        public DbSet<Time> Times { get; set; }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\Graniti\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {}
+    "C:\\Users\\spahi\\Desktop\\time.App-main\\TimeApp\\Time-App\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\Graniti\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {
+    "C:\\Users\\spahi\\Desktop\\time.App-main\\TimeApp\\Time-App\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Graniti\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\spahi\\Desktop\\time.App-main\\TimeApp\\Time-App\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
         "projectName": "TimeApp.Utility",
-        "projectPath": "C:\\Users\\hp\\Desktop\\Graniti\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\Graniti\\TimeApp\\TimeApp.Utility\\obj\\",
+        "projectPath": "C:\\Users\\spahi\\Desktop\\time.App-main\\TimeApp\\Time-App\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+        "packagesPath": "C:\\Users\\spahi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\spahi\\Desktop\\time.App-main\\TimeApp\\Time-App\\TimeApp\\TimeApp.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\spahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
