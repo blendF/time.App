@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\spahi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\New folder\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
+      "projectUniqueName": "C:\\Users\\spahi\\Desktop\\Time-App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
       "projectName": "TimeApp.Models",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\New folder\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\New folder\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\obj\\",
+      "projectPath": "C:\\Users\\spahi\\Desktop\\Time-App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
+      "packagesPath": "C:\\Users\\spahi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\spahi\\Desktop\\Time-App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\spahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -65,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
