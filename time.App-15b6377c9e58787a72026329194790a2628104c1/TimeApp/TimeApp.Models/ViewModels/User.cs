@@ -26,7 +26,9 @@ namespace TimeApp.Models.ViewModels
         public int Role_Id { get; set; }
         [ForeignKey("Role_Id")]
         public Role Role { get; set; }
-        public int? Language { get; set; }
+
+
+        public string Language { get; set; }
 
 
 

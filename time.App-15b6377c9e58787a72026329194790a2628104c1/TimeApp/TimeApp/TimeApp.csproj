@@ -21,8 +21,4 @@
     <ProjectReference Include="..\TimeApp.Models\TimeApp.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
-  </ItemGroup>
-
 </Project>
