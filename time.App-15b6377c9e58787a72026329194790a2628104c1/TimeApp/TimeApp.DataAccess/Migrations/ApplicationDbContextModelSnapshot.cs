@@ -242,6 +242,21 @@ namespace TimeApp.DataAccess.Migrations
                     b.ToTable("Interviews");
                 });
 
+            modelBuilder.Entity("TimeApp.Models.ViewModels.Language", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LanguageType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Language");
+                });
+
             modelBuilder.Entity("TimeApp.Models.ViewModels.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -285,7 +300,7 @@ namespace TimeApp.DataAccess.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("Language")
+                    b.Property<int>("LanguageId")
                         .HasColumnType("int");
 
                     b.Property<string>("Password")
@@ -302,6 +317,8 @@ namespace TimeApp.DataAccess.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("LanguageId");
 
                     b.HasIndex("Role_Id");
 
@@ -383,11 +400,19 @@ namespace TimeApp.DataAccess.Migrations
 
             modelBuilder.Entity("TimeApp.Models.ViewModels.User", b =>
                 {
+                    b.HasOne("TimeApp.Models.ViewModels.Language", "Language")
+                        .WithMany()
+                        .HasForeignKey("LanguageId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("TimeApp.Models.ViewModels.Role", "Role")
                         .WithMany()
                         .HasForeignKey("Role_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Language");
 
                     b.Navigation("Role");
                 });

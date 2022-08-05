@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-TimeApp-3952BC53-3DC0-45BC-9628-129C3C9CE7AB")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TimeApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]

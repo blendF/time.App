@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using TimeApp.Models.ViewModels;
+using TimeApp.Models;
 
 namespace TimeApp.Data
 {
@@ -18,7 +18,6 @@ namespace TimeApp.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Interview> Interviews { get; set; }
         public DbSet<Time> Times{ get; set; }
-        public DbSet<Language> Languages{ get; set; }
 
     }
 }

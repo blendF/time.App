@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TimeApp.Models.ViewModels
+namespace TimeApp.Models
 {
     public class User
     {
@@ -27,10 +27,8 @@ namespace TimeApp.Models.ViewModels
         [ForeignKey("Role_Id")]
         public Role Role { get; set; }
 
-
-        public string Language { get; set; }
-
-
-
+        public int LanguageId { get; set; }
+        [ForeignKey("LanguageId")]
+        public Language Language { get; set; }
     }
 }

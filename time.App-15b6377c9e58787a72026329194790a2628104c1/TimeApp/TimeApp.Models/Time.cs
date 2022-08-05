@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TimeApp.Models.ViewModels
+namespace TimeApp.Models
 {
     public class Time
     {
         [Key]
         public int Id { get; set; }
-        public DateTime DateTime{ get; set; }
+        public DateTime DateTime { get; set; } = DateTime.Now;
 
         public int  User_Id { get; set; }
         [ForeignKey("User_Id")]

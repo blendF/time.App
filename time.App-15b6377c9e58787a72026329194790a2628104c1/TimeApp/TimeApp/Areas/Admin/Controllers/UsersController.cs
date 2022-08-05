@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TimeApp.Data;
-using TimeApp.Models.ViewModels;
+using TimeApp.Models;
 
 namespace TimeApp.Areas.Admin.Controllers
 {
@@ -60,10 +60,10 @@ namespace TimeApp.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            if (user.Language == "Zgjedhe Rolin")
-            {
-                Console.WriteLine("Not Found");
-            }
+            //if (user.Language == "Zgjedhe Rolin")
+            //{
+            //    Console.WriteLine("Not Found");
+            //}
             ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name", user.Role_Id);
             return View(user);
         }

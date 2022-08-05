@@ -5,16 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TimeApp.Models.ViewModels
+namespace TimeApp.Models
 {
     public class Language
     {
         [Key]
         public int Id { get; set; }
-
-        [Required]
-        [Display (Name = "Shto Gjuhen")]
-        public string Gjuha { get; set; }
-
+        public string LanguageType { get; set; }
     }
 }
