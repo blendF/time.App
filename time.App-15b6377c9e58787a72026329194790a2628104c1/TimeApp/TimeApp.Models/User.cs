@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,15 +11,14 @@ namespace TimeApp.Models
     public class User
     {
         [Key]
-
         public int Id { get; set; }
+
         [Required]
         [StringLength(50)]
         public string Username { get; set; }
+
         [Required]
-
         [StringLength(20)]
-
         public string Password { get; set; }
 
 
@@ -27,8 +26,8 @@ namespace TimeApp.Models
         [ForeignKey("Role_Id")]
         public Role Role { get; set; }
 
-        public int LanguageId { get; set; }
-        [ForeignKey("LanguageId")]
+        public int Language_Id { get; set; }
+        [ForeignKey("Language_Id")]
         public Language Language { get; set; }
     }
 }

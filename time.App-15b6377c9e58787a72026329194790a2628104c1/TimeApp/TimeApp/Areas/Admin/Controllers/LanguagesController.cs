@@ -11,23 +11,22 @@ using TimeApp.Models;
 namespace TimeApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class UsersController : Controller
+    public class LanguagesController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public UsersController(ApplicationDbContext context)
+        public LanguagesController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Admin/Users
+        // GET: Admin/Languages
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Users.Include(u => u.Language).Include(u => u.Role);
-            return View(await applicationDbContext.ToListAsync());
+            return View(await _context.Languages.ToListAsync());
         }
 
-        // GET: Admin/Users/Details/5
+        // GET: Admin/Languages/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -35,45 +34,39 @@ namespace TimeApp.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
-                .Include(u => u.Language)
-                .Include(u => u.Role)
+            var language = await _context.Languages
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (user == null)
+            if (language == null)
             {
                 return NotFound();
             }
 
-            return View(user);
+            return View(language);
         }
 
-        // GET: Admin/Users/Create
+        // GET: Admin/Languages/Create
         public IActionResult Create()
         {
-            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "Id");
-            ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name");
             return View();
         }
 
-        // POST: Admin/Users/Create
+        // POST: Admin/Languages/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Username,Password,Role_Id,Language_Id")] User user)
+        public async Task<IActionResult> Create([Bind("Id,LanguageType")] Language language)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(user);
+                _context.Add(language);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "Id", user.Language_Id);
-            ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name", user.Role_Id);
-            return View(user);
+            return View(language);
         }
 
-        // GET: Admin/Users/Edit/5
+        // GET: Admin/Languages/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,24 +74,22 @@ namespace TimeApp.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
+            var language = await _context.Languages.FindAsync(id);
+            if (language == null)
             {
                 return NotFound();
             }
-            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "Id", user.Language_Id);
-            ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name", user.Role_Id);
-            return View(user);
+            return View(language);
         }
 
-        // POST: Admin/Users/Edit/5
+        // POST: Admin/Languages/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Username,Password,Role_Id,Language_Id")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,LanguageType")] Language language)
         {
-            if (id != user.Id)
+            if (id != language.Id)
             {
                 return NotFound();
             }
@@ -107,12 +98,12 @@ namespace TimeApp.Areas.Admin.Controllers
             {
                 try
                 {
-                    _context.Update(user);
+                    _context.Update(language);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserExists(user.Id))
+                    if (!LanguageExists(language.Id))
                     {
                         return NotFound();
                     }
@@ -123,12 +114,10 @@ namespace TimeApp.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "Id", user.Language_Id);
-            ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name", user.Role_Id);
-            return View(user);
+            return View(language);
         }
 
-        // GET: Admin/Users/Delete/5
+        // GET: Admin/Languages/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,32 +125,30 @@ namespace TimeApp.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
-                .Include(u => u.Language)
-                .Include(u => u.Role)
+            var language = await _context.Languages
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (user == null)
+            if (language == null)
             {
                 return NotFound();
             }
 
-            return View(user);
+            return View(language);
         }
 
-        // POST: Admin/Users/Delete/5
+        // POST: Admin/Languages/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-            _context.Users.Remove(user);
+            var language = await _context.Languages.FindAsync(id);
+            _context.Languages.Remove(language);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool UserExists(int id)
+        private bool LanguageExists(int id)
         {
-            return _context.Users.Any(e => e.Id == id);
+            return _context.Languages.Any(e => e.Id == id);
         }
     }
 }

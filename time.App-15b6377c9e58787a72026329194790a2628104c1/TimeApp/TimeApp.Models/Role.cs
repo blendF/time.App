@@ -15,7 +15,6 @@ namespace TimeApp.Models
 
 
         [Required]
-
         [Display(Name = "Role Name")]
         public string Name { get; set; }
 

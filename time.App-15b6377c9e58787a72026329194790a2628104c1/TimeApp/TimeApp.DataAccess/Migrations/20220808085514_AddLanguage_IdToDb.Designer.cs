@@ -10,8 +10,8 @@ using TimeApp.Data;
 namespace TimeApp.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220805142452_AddColumnUserLanguage")]
-    partial class AddColumnUserLanguage
+    [Migration("20220808085514_AddLanguage_IdToDb")]
+    partial class AddLanguage_IdToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -221,7 +221,7 @@ namespace TimeApp.DataAccess.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.ViewModels.Interview", b =>
+            modelBuilder.Entity("TimeApp.Models.Interview", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -244,7 +244,7 @@ namespace TimeApp.DataAccess.Migrations
                     b.ToTable("Interviews");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.ViewModels.Language", b =>
+            modelBuilder.Entity("TimeApp.Models.Language", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -252,14 +252,15 @@ namespace TimeApp.DataAccess.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("LanguageType")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Language");
+                    b.ToTable("Languages");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.ViewModels.Role", b =>
+            modelBuilder.Entity("TimeApp.Models.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -275,7 +276,7 @@ namespace TimeApp.DataAccess.Migrations
                     b.ToTable("Roles");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.ViewModels.Time", b =>
+            modelBuilder.Entity("TimeApp.Models.Time", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -295,14 +296,14 @@ namespace TimeApp.DataAccess.Migrations
                     b.ToTable("Times");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.ViewModels.User", b =>
+            modelBuilder.Entity("TimeApp.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("LanguageId")
+                    b.Property<int>("Language_Id")
                         .HasColumnType("int");
 
                     b.Property<string>("Password")
@@ -320,7 +321,7 @@ namespace TimeApp.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LanguageId");
+                    b.HasIndex("Language_Id");
 
                     b.HasIndex("Role_Id");
 
@@ -378,9 +379,9 @@ namespace TimeApp.DataAccess.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("TimeApp.Models.ViewModels.Interview", b =>
+            modelBuilder.Entity("TimeApp.Models.Interview", b =>
                 {
-                    b.HasOne("TimeApp.Models.ViewModels.User", "User")
+                    b.HasOne("TimeApp.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("User_Id")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -389,9 +390,9 @@ namespace TimeApp.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.ViewModels.Time", b =>
+            modelBuilder.Entity("TimeApp.Models.Time", b =>
                 {
-                    b.HasOne("TimeApp.Models.ViewModels.User", "User")
+                    b.HasOne("TimeApp.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("User_Id")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -400,15 +401,15 @@ namespace TimeApp.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.ViewModels.User", b =>
+            modelBuilder.Entity("TimeApp.Models.User", b =>
                 {
-                    b.HasOne("TimeApp.Models.ViewModels.Language", "Language")
+                    b.HasOne("TimeApp.Models.Language", "Language")
                         .WithMany()
-                        .HasForeignKey("LanguageId")
+                        .HasForeignKey("Language_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TimeApp.Models.ViewModels.Role", "Role")
+                    b.HasOne("TimeApp.Models.Role", "Role")
                         .WithMany()
                         .HasForeignKey("Role_Id")
                         .OnDelete(DeleteBehavior.Cascade)

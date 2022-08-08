@@ -2164,11 +2164,6 @@ C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.TagHelpers.input.cache
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.TagHelpers.output.cache
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.RazorCoreGenerate.cache
-C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Create.cshtml.g.cs
-C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Delete.cshtml.g.cs
-C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Details.cshtml.g.cs
-C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Edit.cshtml.g.cs
-C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Agent\Views\Home\Index.cshtml.g.cs
@@ -2203,3 +2198,13 @@ C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Times\Details.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Times\Edit.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Times\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Create.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Delete.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Details.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Edit.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Languages\Create.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Languages\Delete.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Languages\Details.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Languages\Edit.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Time-App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Languages\Index.cshtml.g.cs

@@ -30,9 +30,9 @@
                 <span asp-validation-for="Role_Id" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Language" class="control-label"></label>
-                <input asp-for="Language" class="form-control" />
-                <span asp-validation-for="Language" class="text-danger"></span>
+                <label asp-for="Language_Id" class="control-label"></label>
+                <select asp-for="Language_Id" class="form-control" asp-items="ViewBag.Language_Id"></select>
+                <span asp-validation-for="Language_Id" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
