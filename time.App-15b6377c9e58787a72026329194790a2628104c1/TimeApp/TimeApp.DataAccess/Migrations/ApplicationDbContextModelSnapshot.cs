@@ -294,6 +294,29 @@ namespace TimeApp.DataAccess.Migrations
                     b.ToTable("Times");
                 });
 
+            modelBuilder.Entity("TimeApp.Models.TimeAndInterview", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Data")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Interview")
+                        .HasColumnType("int");
+
+                    b.Property<int>("User_Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("User_Id");
+
+                    b.ToTable("TimeAndInterviews");
+                });
+
             modelBuilder.Entity("TimeApp.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -389,6 +412,17 @@ namespace TimeApp.DataAccess.Migrations
                 });
 
             modelBuilder.Entity("TimeApp.Models.Time", b =>
+                {
+                    b.HasOne("TimeApp.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("User_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TimeApp.Models.TimeAndInterview", b =>
                 {
                     b.HasOne("TimeApp.Models.User", "User")
                         .WithMany()

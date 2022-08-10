@@ -35,15 +35,12 @@ namespace TimeApp.Areas.Admin.Controllers
         }
 
         // POST: Admin/Interviews/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Interviews,User_Id,Data")] Interview interview)
         {
             if (ModelState.IsValid)
             {
-                //Mentori....
                 interview.Data = DateTime.Now;
                 _context.Add(interview);
                 await _context.SaveChangesAsync();

@@ -54,8 +54,6 @@ namespace TimeApp.Areas.Admin.Controllers
         }
 
         // POST: Admin/Times/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,DateTime,User_Id")] Time time)
@@ -88,8 +86,6 @@ namespace TimeApp.Areas.Admin.Controllers
         }
 
         // POST: Admin/Times/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,DateTime,User_Id")] Time time)
