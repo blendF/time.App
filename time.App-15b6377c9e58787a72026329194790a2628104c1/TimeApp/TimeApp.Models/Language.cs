@@ -12,7 +12,7 @@ namespace TimeApp.Models
     {
         [Key]
         public int Id { get; set; }
-
+        [Display(Name = "Gjuha!")]
         [StringLength(50)]
         public string LanguageType { get; set; }
     }

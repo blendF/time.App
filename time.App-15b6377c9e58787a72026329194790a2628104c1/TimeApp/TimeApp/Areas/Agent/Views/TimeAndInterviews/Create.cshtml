@@ -4,30 +4,62 @@
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!DOCTYPE html>
+<html>
 
-<h1>Create</h1>
+<head>
+    <title>
+        Ses 22 - Sh2
+    </title>
 
-<h4>TimeAndInterview</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Interview" class="control-label"></label>
-                <input asp-for="Interview" value="0" class="form-control" />
-                <span asp-validation-for="Interview" class="text-danger"></span>
-            </div>            
-            <div class="form-group">
-                <label asp-for="User_Id" class="control-label"></label>
-                <select asp-for="User_Id" class ="form-control" asp-items="ViewBag.User_Id"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" asp-action="create" />
-            </div>
-        </form>
+    <script src="~/js/Timer.js"></script>
+    <link rel="stylesheet" href="~/css/Timer.css" />
+
+
+</head>
+<body class="TimerBackground">
+
+    <h1>Create</h1>
+
+    <h4>TimeAndInterview</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Interview" class="control-label"></label>
+                    <input asp-for="Interview" value="0" class="form-control" />
+                    <span asp-validation-for="Interview" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="User_Id" class="control-label"></label>
+                    <select asp-for="User_Id" class="form-control" asp-items="ViewBag.User_Id"></select>
+                </div>
+                <div class="permbajtja">
+                    <h1>llogaritja e kohes.</h1>
+                    <h2>Permes butonav te meposhtem, llogarisni kohen. </h2>
+                    <p>
+                        <span id="oret">00</span>:<span id="minutat">00</span>:<span id="sekondat">00</span><span style="display:none ;" id="milisekondat">00</span>
+                    </p>
+                    <div class="form-group">
+                        <input style="cursor: pointer;" id="fillo" type="submit" value="Fillo" class="btn btn-primary" asp-action="create"/>
+                    </div>
+                    <div class="form-group">
+                        <input style="cursor: pointer;"  id="ndalo" type="" value="Ndalo" class="btn btn-primary" asp-action="create" />
+                    </div>
+                </div>
+            </form>
+
+
+
+
+        </div>
     </div>
-</div>
+    
+</body>
+
+</html>
 
 <div>
     <a asp-action="Index">Back to List</a>
