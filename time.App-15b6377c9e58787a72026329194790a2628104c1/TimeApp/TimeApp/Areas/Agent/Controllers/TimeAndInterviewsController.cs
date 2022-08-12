@@ -51,7 +51,7 @@ namespace TimeApp.Areas.Agent.Controllers
         // GET: Agent/TimeAndInterviews/Create
         public IActionResult Create()
         {
-            ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Password");
+            ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Username");
             return View();
         }
 
@@ -65,9 +65,9 @@ namespace TimeApp.Areas.Agent.Controllers
                 timeAndInterview.Data = DateTime.Now;
                 _context.Add(timeAndInterview);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Create));
             }
-            ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Password", timeAndInterview.User_Id);
+            ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Username", timeAndInterview.User_Id);
             return View(timeAndInterview);
         }
 
@@ -84,7 +84,7 @@ namespace TimeApp.Areas.Agent.Controllers
             {
                 return NotFound();
             }
-            ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Password", timeAndInterview.User_Id);
+            ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Username", timeAndInterview.User_Id);
             return View(timeAndInterview);
         }
 

@@ -21,8 +21,4 @@
     <ProjectReference Include="..\TimeApp.Models\TimeApp.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\Image\" />
-  </ItemGroup>
-
 </Project>

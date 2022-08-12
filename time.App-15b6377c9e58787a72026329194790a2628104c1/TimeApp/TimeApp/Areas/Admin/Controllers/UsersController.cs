@@ -50,7 +50,7 @@ namespace TimeApp.Areas.Admin.Controllers
         // GET: Admin/Users/Create
         public IActionResult Create()
         {
-            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "Id");
+            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "LanguageType");
             ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name");
             return View();
         }
@@ -66,7 +66,7 @@ namespace TimeApp.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "Id", user.Language_Id);
+            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "LanguageType", user.Language_Id);
             ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name", user.Role_Id);
             return View(user);
         }

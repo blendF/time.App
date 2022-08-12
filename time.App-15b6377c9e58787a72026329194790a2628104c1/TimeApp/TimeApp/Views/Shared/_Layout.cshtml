@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TimeApp</a>
+                <a class="navbar-brand" asp-area="Admin" asp-controller="Home" asp-action="Index">TimeApp</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,12 +24,15 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="Users" asp-action="Index">User</a>
-                        </li>                      
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="Roles" asp-action="Index">Roles</a>
-                        </li>                     
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="Languages" asp-action="Index">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="TimeAndInterviews" asp-action="Index">Tabela per admin</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Agent" asp-controller="TimeAndInterviews" asp-action="Create">TimeAndInterviews</a>
@@ -40,7 +43,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid" style="padding-left: -15px !important; padding-right: -15px !important;">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
