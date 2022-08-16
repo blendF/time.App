@@ -12,6 +12,7 @@ namespace TimeApp.Models
     {
         [Key]
         public int Id { get; set; }
+
         public DateTime DateTime { get; set; } = DateTime.Now;
 
         public int  User_Id { get; set; }

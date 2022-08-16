@@ -84,7 +84,7 @@ namespace TimeApp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "Id", user.Language_Id);
+            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "LanguageType", user.Language_Id);
             ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name", user.Role_Id);
             return View(user);
         }
@@ -119,7 +119,7 @@ namespace TimeApp.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "Id", user.Language_Id);
+            ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "LanguageType", user.Language_Id);
             ViewData["Role_Id"] = new SelectList(_context.Roles, "Id", "Name", user.Role_Id);
             return View(user);
         }

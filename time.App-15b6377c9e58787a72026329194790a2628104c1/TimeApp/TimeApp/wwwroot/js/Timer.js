@@ -1,89 +1,64 @@
-﻿window.onload = function () {
-    var oret = 00;
-    var minutat = 00;
-    var sekondat = 00;
-    var milisekondat = 00;
+﻿
+// Global variables
+const time_el = document.querySelector('.watch .time');
+const start_btn = document.getElementById('start');
+const stop_btn = document.getElementById("stop");
+const reset_btn = document.getElementById("reset");
 
-    var eoret = document.getElementById("oret");
-    var eminutave = document.getElementById("minutat");
-    var esekondave = document.getElementById("sekondat");
-    var emilisekondave = document.getElementById("milisekondat");
-    var fillo = document.getElementById("fillo");
-    var ndalo = document.getElementById("ndalo");
-    var rifillo = document.getElementById("rifillo");
+let seconds = 0;
+let interval = null;
 
-    var intervali;
+// Event listeners
+start_btn.addEventListener('click', start);
+stop_btn.addEventListener("click", stop);
+reset_btn.addEventListener("click", reset);
 
-    fillo.onclick = function () {
-        clearInterval(intervali);
-        intervali = setInterval(startTimer, 0)
-    }
-    ndalo.onclick = function () {
-        clearInterval(intervali);
-    }
-    rifillo.onclick = function () {
-        clearInterval(intervali);
-        oret = "00";
-        minutat = "00";
-        sekondat = "00";
-        milisekondat = "00";
+// Update the timer
+function timer() {
+    seconds++;
 
-        eoret.innerHTML = oret;
-        eminutave.innerHTML = minutat;
-        esekondave.innerHTML = sekondat;
-        emilisekondave.innerHTML = milisekondat;
-    }
+    // Format our time
+    let hrs = Math.floor(seconds / 3600);
+    let mins = Math.floor((seconds - (hrs * 3600)) / 60);
+    let secs = seconds % 60;
 
-    function startTimer() {
-        milisekondat++;
+    if (secs < 10) secs = '0' + secs;
+    if (mins < 10) mins = "0" + mins;
+    if (hrs < 10) hrs = "0" + hrs;
 
-        if (milisekondat <= 9) {
-            emilisekondave.innerHTML = "0" + milisekondat;
-        }
-        if (milisekondat > 9) {
-            emilisekondave.innerHTML = milisekondat;
-        }
-        if (milisekondat > 90) {
-            console.log("sekondat");
-            sekondat++;
-            esekondave.innerHTML = + sekondat;
-            if (sekondat <= 9) {
-                esekondave.innerHTML = "0" + sekondat;
-            }
-            milisekondat = 0;
-            emilisekondave.innerHTML = + 0;
-        }
-
-
-
-        if (esekondave > 9) {
-            emilisekondave.innerHTML = sekondat;
-        }
-
-        if (sekondat > 59) {
-            console.log("minutat");
-            minutat++;
-            eminutave.innerHTML = + minutat;
-            if (minutat <= 9) {
-                eminutave.innerHTML = "0" + minutat;
-            }
-            sekondat = 0;
-            esekondave.innerHTML = "0" + 0;
-        }
-
-        if (minutat > 59) {
-            console.log("oret");
-            oret++;
-            eoret.innerHTML = + oret;
-            if (oret <= 9) {
-                eoret.innerHTML = "0" + oret;
-            }
-            minutat = 00;
-            eminutave.innerHTML = "0" + 0;
-        }
-    }
+    time_el.innerText = `${hrs}:${mins}:${secs}`;
 }
 
+function start() {
+    if (interval) {
+        return
+    }
 
+    interval = setInterval(timer, 1000);
+}
 
+function stop() {
+    clearInterval(interval);
+    interval = null;
+}
 
+function reset() {
+    stop();
+    seconds = 0;
+    time_el.innerText = '00:00:00';
+}
+
+//------------------------------
+
+function CallStopFromStart() {
+
+    document.getElementById("start").hidden = true;
+    document.getElementById("stop").hidden = false;
+
+}
+
+function CallStartFromStop() {
+
+    document.getElementById("start").hidden = false;
+    document.getElementById("stop").hidden = true;
+}

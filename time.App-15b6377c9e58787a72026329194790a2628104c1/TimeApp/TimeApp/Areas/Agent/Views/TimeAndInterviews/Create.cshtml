@@ -2,13 +2,14 @@
 
 @{
     ViewData["Title"] = "Create";
+    Layout = null;
 }
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>
-        Ses 22 - Sh2
+        Interview
     </title>
 
     <script src="~/js/Timer.js"></script>
@@ -17,7 +18,6 @@
 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <script src="javascript.js"></script>
     <link rel="stylesheet" href="stilizimi.css">
 
     <title>Bootslander Bootstrap Template - Index</title>
@@ -28,10 +28,15 @@
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
+    <!--start-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Arsha Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -39,80 +44,190 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
 
 
 
 </head>
 <body>
-    <header id="header" class=" d-flex align-items-center sticky-top">
-        <div class="container d-flex align-items-center justify-content-between">
-            <div class="logo">
-                <h1><span>  Time App <img src="~/Image/tmoff.png" class="logoheader" alt=""></span></h1>
-            </div>
-        </div>
-    </header>
     <section id="hero">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                    <div data-aos="zoom-out">
-                        <form asp-action="Create">
-                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                            <div class="form-group">
-                                <label asp-for="Interview" class="control-label"></label>
-                                <input asp-for="Interview" value="0" class="form-control" style="background-color: transparent; color: white;" />
-                                <span asp-validation-for="Interview" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                                <label asp-for="User_Id" class="control-label"></label>
-                                <select asp-for="User_Id" class="form-control" asp-items="ViewBag.User_Id"></select>
-                            </div>
-                            <div class="permbajtja">
-                                <h1>llogaritja e kohes.</h1>
-                                <h2>Permes butonav te meposhtem, llogarisni kohen. </h2>
-                                <p>
-                                    <span id="oret">00</span>:<span id="minutat">00</span>:<span id="sekondat">00</span><span style="display:none ;" id="milisekondat">00</span>
-                                </p>
+        <header id="header" class="fixed-top ">
+            <div class="container d-flex align-items-center">
+
+                <h1 class="logo me-auto"><a href="index.html">Time.App</a></h1>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                        <li><a class="nav-link scrollto" href="#about">User</a></li>
+                        <li><a class="nav-link scrollto" href="#services">Roles</a></li>
+                        <li><a class="nav-link   scrollto" href="#portfolio">Admin Table</a></li>
+                        <li><a class="nav-link scrollto" href="#team">WorkSpace-Timer</a></li>
+
+
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+
+            </div>
+        </header><!-- End Header -->
+
+
+        <section id="hero" class="d-flex align-items-center">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                        <h1>Keep track of your work, with TimeApp</h1>
+                        <h2>Acces the button below to measure the interview session</h2>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <form asp-action="Create">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                 <div class="form-group">
-                                    <input style="cursor: pointer;" id="fillo" type="submit" value="Fillo" class="btn btn-primary" asp-action="create" />
-                                    <input style="cursor: pointer;" id="ndalo" type="submit" value="Ndalo" class="btn btn-primary" asp-action="create" />
+                                    <label asp-for="Interview" class="control-label"></label>
+                                    <input asp-for="Interview" value="0" class="form-control" style="background-color: transparent; color: white;" />
+                                    <span asp-validation-for="Interview" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="User_Id" class="control-label"></label>
+                                    <select asp-for="User_Id" class="form-control" asp-items="ViewBag.User_Id"></select>
+                                </div>
+                                <div class="permbajtja">
+                                    <div class="form-group">
+                                        <input style="cursor: pointer;" id="fillo" type="submit" value="Fillo" class="btn btn-primary" asp-action="create" />
+                                        <input style="cursor: pointer;" id="ndalo" type="submit" value="Ndalo" class="btn btn-primary" asp-action="create" />
+
+                                    </div>
 
                                 </div>
-
-                            </div>
-                        </form>
+                                <div class="watch">
+                                        <div class="time">00:00:00</div>
+                                        <div class="controls">
+                                            <button id="start" class="btn btn-success" onclick="CallStopFromStart()" asp-action="create">Start</button>
+                                            <button id="stop" class="btn btn-danger" type="submit" onclick="CallStartFromStop()" hidden asp-action="create">Stop</button>
+                                        </div>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="assets/img/timeappicon.webp" class="img-fluid animated" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                    <img src="~/Image/timeapp.png" class="img-fluid animated" style="border-radius: 40px" alt="" id="getimgsize">
-                </div>
             </div>
-        </div>
+            <br>
+            <br>
+        </section><!-- End Hero -->
 
+        <main id="main">
 
-        <br>
-        <br>
-        <br>
+            <!-- ======= Clients Section ======= -->
+            <section id="clients" class="clients section-bg">
+                <div class="container">
 
-        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-            <defs>
-                <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-            </defs>
-            <g class="wave1">
-                <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-            </g>
-            <g class="wave2">
-                <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-            </g>
-            <g class="wave3">
-                <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-            </g>
-        </svg>
+                    <div class="row" data-aos="zoom-in">
 
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/clients/bambus.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/clients/treedev.webp" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/clients/flutura.academy.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/clients/initova.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/clients/taktika.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="assets/img/clients/yoloway.png" class="img-fluid" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+           
     </section><!-- End Hero -->
+
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
 
+    <script>
+
+        // Global variables
+        const time_el = document.querySelector('.watch .time');
+        const start_btn = document.getElementById('start');
+        const stop_btn = document.getElementById("stop");
+        const reset_btn = document.getElementById("reset");
+
+        let seconds = 0;
+        let interval = null;
+
+        // Event listeners
+        start_btn.addEventListener('click', start);
+        stop_btn.addEventListener("click", stop);
+        reset_btn.addEventListener("click", reset);
+
+        // Update the timer
+        function timer() {
+            seconds++;
+
+            // Format our time
+            let hrs = Math.floor(seconds / 3600);
+            let mins = Math.floor((seconds - (hrs * 3600)) / 60);
+            let secs = seconds % 60;
+
+            if (secs < 10) secs = '0' + secs;
+            if (mins < 10) mins = "0" + mins;
+            if (hrs < 10) hrs = "0" + hrs;
+
+            time_el.innerText = `${hrs}:${mins}:${secs}`;
+        }
+
+        function start() {
+            if (interval) {
+                return
+            }
+
+            interval = setInterval(timer, 1000);
+        }
+
+        function stop() {
+            clearInterval(interval);
+            interval = null;
+        }
+
+        function reset() {
+            stop();
+            seconds = 0;
+            time_el.innerText = '00:00:00';
+        }
+
+        //------------------------------
+
+        function CallStopFromStart() {
+
+            document.getElementById("start").hidden = true;
+            document.getElementById("stop").hidden = false;
+
+        }
+
+        function CallStartFromStop() {
+
+            document.getElementById("start").hidden = false;
+            document.getElementById("stop").hidden = true;
+        }
+
+    </script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -123,6 +238,11 @@
 
     <!-- Template Main JS File -->
     <script src="~/js/main.js"></script>
+    <script src="~/js/Timer.js"></script>
+    <script src="~/js/site.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
 </body>
 
