@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\8.17.2022\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\BlendTimeApp\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
       "projectName": "TimeApp.Utility",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\8.17.2022\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\BlendTimeApp\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\8.17.2022\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\BlendTimeApp\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -56,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -65,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

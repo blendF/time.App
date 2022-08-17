@@ -105,3 +105,15 @@ C:\Users\Lenovo\Desktop\8.17.2022\time.App-15b6377c9e58787a72026329194790a262810
 C:\Users\Lenovo\Desktop\8.17.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.dll
 C:\Users\Lenovo\Desktop\8.17.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\ref\TimeApp.Utility.dll
 C:\Users\Lenovo\Desktop\8.17.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.pdb
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\bin\Debug\net5.0\TimeApp.Utility.deps.json
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\bin\Debug\net5.0\TimeApp.Utility.dll
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\bin\Debug\net5.0\TimeApp.Utility.pdb
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.dll
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\refint\TimeApp.Utility.dll
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.pdb
+C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\ref\TimeApp.Utility.dll

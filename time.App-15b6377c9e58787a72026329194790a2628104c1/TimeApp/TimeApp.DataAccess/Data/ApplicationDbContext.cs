@@ -19,7 +19,5 @@ namespace TimeApp.Data
         public DbSet<Interview> Interviews { get; set; }
         public DbSet<Time> Times{ get; set; }
         public DbSet<Language> Languages { get; set; }
-        public DbSet<TimeAndInterview> TimeAndInterviews { get; set; }
-
     }
 }
