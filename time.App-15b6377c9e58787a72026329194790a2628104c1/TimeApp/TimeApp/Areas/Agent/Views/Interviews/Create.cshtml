@@ -2,37 +2,165 @@
 
 @{
     ViewData["Title"] = "Create";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
 }
 
-<h1>Create</h1>
+<!DOCTYPE html>
+<html>
 
-<h4>Interview</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Interviews" class="control-label"></label>
-                <input asp-for="Interviews" class="form-control" />
-                <span asp-validation-for="Interviews" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="User_Id" class="control-label"></label>
-                <select asp-for="User_Id" class ="form-control" asp-items="ViewBag.User_Id"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+<head>
+    <title>
+        Interview
+    </title>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <script src="~/js/Timer.js"></script>
+    <link rel="stylesheet" href="~/css/Timer.css" />
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Bootslander Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!--start-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Arsha Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+
+
+</head>
+<body>
+    <section id="hero">
+        <header id="header" class="fixed-top ">
+            <div class="container d-flex align-items-center">
+
+                <h1 class="logo me-auto"><a href="index.html">Time.App</a></h1>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Agent" target="_blank" asp-controller="Times" asp-action="Create">Times</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-area="Agent" asp-controller="Interviews" asp-action="Create">Interviews</a>
+                        </li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+
+            </div>
+        </header><!-- End Header -->
+
+
+        <section id="hero" class="d-flex align-items-center">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                        <h1>Keep track of your work, with TimeApp</h1>
+                        <h2>Acces the button below to measure the interview session</h2>
+                        <div class="d-flex justify-content-center justify-content-lg-start flex-column">
+                            <form asp-action="Create">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group">
+                                    <label asp-for="Interviews" class="control-label"></label>
+                                    <input asp-for="Interviews" class="form-control" />
+                                    <span asp-validation-for="Interviews" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="User_Id" class="control-label"></label>
+                                    <select asp-for="User_Id" class="form-control" asp-items="ViewBag.User_Id"></select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Create" class="btn btn-primary" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="~/Images/timeappicon.webp" class="img-fluid animated" alt="">
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+
+        </section><!-- End Hero -->
+
+    </section><!-- End Hero -->
+    <main id="main">
+
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients section-bg">
+            <div class="container">
+
+                <div class="row" data-aos="zoom-in">
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/Images/bambus.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/Images/flutura.academy.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/Images/initova.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/Images/taktika.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/Images/treedev.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/Images/yoloway.png" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Template Main JS File -->
+    <script src="~/js/main.js"></script>
+    <script src="~/js/Timer.js"></script>
+    <script src="~/js/site.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+
+</html>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+

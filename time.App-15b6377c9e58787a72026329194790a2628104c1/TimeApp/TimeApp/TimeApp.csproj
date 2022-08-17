@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\Image\**" />
+    <Content Remove="wwwroot\Image\**" />
+    <EmbeddedResource Remove="wwwroot\Image\**" />
+    <None Remove="wwwroot\Image\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.17" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.17" />
@@ -22,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Image\" />
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>
