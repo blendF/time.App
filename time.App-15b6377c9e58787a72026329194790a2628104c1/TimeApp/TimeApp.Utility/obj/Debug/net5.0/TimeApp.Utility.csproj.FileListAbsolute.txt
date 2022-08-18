@@ -117,3 +117,4 @@ C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a262
 C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\refint\TimeApp.Utility.dll
 C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.pdb
 C:\Users\Lenovo\Desktop\BlendTimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\ref\TimeApp.Utility.dll
+C:\Users\Lenovo\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.csproj.AssemblyReference.cache
