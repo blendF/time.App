@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using TimeApp.Models;
 namespace TimeApp.Areas.Agent.Controllers
 {
     [Area("Agent")]
+    [Authorize(Roles = "Agent, Admin")]
     public class HomeController : Controller
     {
       

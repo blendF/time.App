@@ -1,3 +1,15 @@
 ﻿@{
-    Layout = "~/Views/Shared/_LoginPartial.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@*@{ 
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    else if(User.IsInRole("Agent"))
+    {
+        Layout = "~/Views/Shared/_AgentLayout.cshtml";
+    }
+}*@

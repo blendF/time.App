@@ -5482,3 +5482,8 @@ C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a262810
 C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\ref\TimeApp.dll
 C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.pdb
 C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Pages\_Layout.cshtml.g.cs
+C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Lenovo\Desktop\19.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Views\Shared\_AgentLayout.cshtml.g.cs
