@@ -13,16 +13,19 @@
         Interview
     </title>
 
-    <script src="~/js/Timer.js"></script>
-    <link rel="stylesheet" href="~/css/Timer.css" />
 
-
-    <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Bootslander Bootstrap Template - Index</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Timer.css" />
+
+
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -38,15 +41,10 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <link rel="stylesheet" href="~/css/style.css" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-
-
 
 
 </head>
-<body>
+<body style="color: snow;">
     <section id="hero">
         <header id="header" class="fixed-top ">
             <div class="container d-flex align-items-center">
@@ -74,13 +72,13 @@
                 <div class="row">
                     <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                         <h1>Keep track of your work, with TimeApp</h1>
-                        <h2>Acces the button below to measure the interview session</h2>
+                        <h2>Click the button below to measure the interview session</h2>
                         <div class="d-flex justify-content-center justify-content-lg-start flex-column">
                             <form asp-action="Create">
                                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                 <div class="form-group">
-                                    <label asp-for="Interviews" class="control-label"></label>
-                                    <input asp-for="Interviews" class="form-control" />
+                                    <label asp-for="Interviews" class="control-label">Click and increase with arrows</label>
+                                    <input asp-for="Interviews" placeholder="0" style="border-radius: 50%; justify-content: center; text-align: center; width: 100px; height: 100px; font-family: 'Times New Roman', Times, serif; font-size: 20px;" min="0" class="form-control" />
                                     <span asp-validation-for="Interviews" class="text-danger"></span>
                                 </div>
                                 <div class="form-group">
@@ -141,6 +139,8 @@
             </div>
         </section>
     </main>
+
+
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
