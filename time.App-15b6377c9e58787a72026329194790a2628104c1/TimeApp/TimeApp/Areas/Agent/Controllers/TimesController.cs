@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TimeApp.Data;
+using TimeApp.Infrastructure.TimerService;
 using TimeApp.Models;
 
 namespace TimeApp.Areas.Agent.Controllers
@@ -14,10 +15,12 @@ namespace TimeApp.Areas.Agent.Controllers
     public class TimesController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly TimerService _timerService;
 
-        public TimesController(ApplicationDbContext context)
+        public TimesController(ApplicationDbContext context, TimerService timerService)
         {
             _context = context;
+            _timerService = timerService;
         }
 
         // GET: Agent/Times
@@ -26,28 +29,37 @@ namespace TimeApp.Areas.Agent.Controllers
             var applicationDbContext = _context.Times.Include(t => t.User);
             return View(await applicationDbContext.ToListAsync());
         }
-      
+
         // GET: Agent/Times/Create
-        public IActionResult Create()
+        public async Task<IActionResult> CreateAsync(int userId = 1)
         {
             ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Username");
+            var userTimes = await _context.Times.Where(time => time.User_Id == userId).ToListAsync();
+            _timerService.SetSeconds(userTimes);
+            var isTimerStarted = userTimes.Count() % 2 != 0;
+            ViewBag.IsStarted = isTimerStarted;
             return View();
         }
+
 
         // POST: Agent/Times/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DateTime,User_Id")] Time time)
+        public async Task<IActionResult> Create([Bind("Id,DateTime,User_Id")] Time time, bool isStarted)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                time.DateTime = DateTime.Now;
-                _context.Add(time);
-                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Create));
             }
-            ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Username", time.User_Id);
-            return View(time);
+            
+            time.DateTime = DateTime.Now;
+            _context.Times.Add(time);
+            await _context.SaveChangesAsync();
+
+            _timerService.ChangeState(isStarted);
+
+            //return RedirectToAction(nameof());
+            return await CreateAsync(time.User_Id);
         }
 
         private bool TimeExists(int id)

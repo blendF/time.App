@@ -7,9 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Compile Remove="Models\**" />
     <Compile Remove="wwwroot\Image\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Models\**" />
     <Content Remove="wwwroot\Image\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Models\**" />
     <EmbeddedResource Remove="wwwroot\Image\**" />
+    <None Remove="Data\**" />
+    <None Remove="Models\**" />
     <None Remove="wwwroot\Image\**" />
   </ItemGroup>
 
@@ -29,8 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Models\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\Images\" />
     <Folder Include="wwwroot\js\" />

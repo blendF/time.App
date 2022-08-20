@@ -51,7 +51,7 @@
             </div>
         </header><!-- End Header -->
 
-
+        <p>@ViewBag.Timer</p>
         <section id="hero" class="d-flex align-items-center">
             <div class="container">
                 <div class="row">
@@ -59,7 +59,16 @@
                         <h1>Keep track of your work, with TimeApp</h1>
                         <h2>Acces the button below to measure the interview session</h2>
                         <div class="d-flex justify-content-center justify-content-lg-start">
-                            <form asp-action="Create">
+                            <form asp-action="Create" method="post">
+                                @if (ViewBag.IsStarted)
+                                {
+                                    <input hidden name="isStart" value="true"/>
+                                }
+                                else 
+                                {
+                                    <input hidden name="isStart" value="false" />
+                                }
+
                                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                 <div class="form-group">
                                     <label asp-for="User_Id" class="control-label"></label>
@@ -68,7 +77,7 @@
                                 <div class="watch">
                                     <div class="time">00:00:00</div>
                                     <div class="controls">
-                                        <input id="start" type="" style="width: 100px; cursor: pointer;" value="Start" class="btn btn-success" onclick="CallStopFromStart()" />
+                                        <input id="start" type="submit" style="width: 100px; cursor: pointer;" value="Start" class="btn btn-success" onclick="CallStopFromStart()" />
                                         <button id="stop" type="submit" style="width: 100px;" value="Stop" class="btn btn-danger" onclick="CallStartFromStop()" hidden>Stop</button>
                                     </div>
                                 </div>
