@@ -34,10 +34,11 @@ namespace TimeApp.Areas.Agent.Controllers
         public async Task<IActionResult> CreateAsync(int userId = 1)
         {
             ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Username");
-            var userTimes = await _context.Times.Where(time => time.User_Id == userId).ToListAsync();
-            _timerService.SetSeconds(userTimes);
+            var userTimes = await _context.Times.Where(time => time.User_Id == userId && time.DateTime > DateTime.Today).ToListAsync();
+            var seconds = _timerService.Seconds(userTimes);
             var isTimerStarted = userTimes.Count() % 2 != 0;
             ViewBag.IsStarted = isTimerStarted;
+            ViewBag.Timer = seconds;
             return View();
         }
 
@@ -56,7 +57,6 @@ namespace TimeApp.Areas.Agent.Controllers
             _context.Times.Add(time);
             await _context.SaveChangesAsync();
 
-            _timerService.ChangeState(isStarted);
 
             //return RedirectToAction(nameof());
             return await CreateAsync(time.User_Id);

@@ -13,6 +13,7 @@ start_btn.addEventListener('click', start);
 stop_btn.addEventListener("click", stop);
 reset_btn.addEventListener("click", reset);
 
+function setSeconds()
 // Update the timer
 function timer() {
     seconds++;
@@ -29,7 +30,8 @@ function timer() {
     time_el.innerText = `${hrs}:${mins}:${secs}`;
 }
 
-function start() {
+function start(seconds) {
+    this.seconds = seconds;
     if (interval) {
         return
     }
