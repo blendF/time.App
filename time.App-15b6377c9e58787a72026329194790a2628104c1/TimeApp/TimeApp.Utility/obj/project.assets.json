@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\drenh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\20.8.2022\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\drenh\\source\\repos\\time.App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
       "projectName": "TimeApp.Utility",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\20.8.2022\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\20.8.2022\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\obj\\",
+      "projectPath": "C:\\Users\\drenh\\source\\repos\\time.App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+      "packagesPath": "C:\\Users\\drenh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\drenh\\Source\\Repos\\time.App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\drenh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -65,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -132,13 +132,8 @@ body {
             background-color: var(--dark);
         }
 
-#stop {
-    background-color: red;
-}
 
-#start {
-    background-color: rgb(89, 212, 89);
-}
+
 
 
 

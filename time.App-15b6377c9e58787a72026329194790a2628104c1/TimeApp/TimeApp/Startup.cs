@@ -12,7 +12,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TimeApp.Data;
-using TimeApp.Infrastructure.TimerService;
 
 namespace TimeApp
 {
@@ -37,7 +36,6 @@ namespace TimeApp
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
 
-            services.AddScoped<TimerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

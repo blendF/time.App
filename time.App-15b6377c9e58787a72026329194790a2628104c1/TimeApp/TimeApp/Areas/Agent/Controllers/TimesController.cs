@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TimeApp.Data;
-using TimeApp.Infrastructure.TimerService;
 using TimeApp.Models;
 
 namespace TimeApp.Areas.Agent.Controllers
@@ -15,12 +14,10 @@ namespace TimeApp.Areas.Agent.Controllers
     public class TimesController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly TimerService _timerService;
 
-        public TimesController(ApplicationDbContext context, TimerService timerService)
+        public TimesController(ApplicationDbContext context)
         {
             _context = context;
-            _timerService = timerService;
         }
 
         // GET: Agent/Times
@@ -33,20 +30,35 @@ namespace TimeApp.Areas.Agent.Controllers
         // GET: Agent/Times/Create
         public async Task<IActionResult> CreateAsync(int userId = 1)
         {
+            //todo: kur te rregullohet authentikimi e hjekni userId
             ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Username");
             var userTimes = await _context.Times.Where(time => time.User_Id == userId && time.DateTime > DateTime.Today).ToListAsync();
-            var seconds = _timerService.Seconds(userTimes);
-            var isTimerStarted = userTimes.Count() % 2 != 0;
-            ViewBag.IsStarted = isTimerStarted;
+            var seconds = GetSeconds(userTimes);
+            var hasTimerStarted = userTimes.Count() % 2 != 0;
+            ViewBag.hasStarted = hasTimerStarted;
             ViewBag.Timer = seconds;
             return View();
+        }
+
+        private double GetSeconds(List<Time> userTimes)
+        {
+            double totalSeconds = 0;
+            if (!userTimes.Any()) return 0;
+            for (int i = 0; i < userTimes.Count(); i++)
+            {
+                if (i % 2 != 0)
+                {
+                    totalSeconds += ((userTimes[i].DateTime.Hour - userTimes[i - 1].DateTime.Hour) * 3600) + ((userTimes[i].DateTime.Minute - userTimes[i - 1].DateTime.Minute) * 60) + (userTimes[i].DateTime.Second - userTimes[i - 1].DateTime.Second);
+                }
+            }
+            return totalSeconds;
         }
 
 
         // POST: Agent/Times/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DateTime,User_Id")] Time time, bool isStarted)
+        public async Task<IActionResult> Create([Bind("Id,DateTime,User_Id")] Time time)
         {
             if (!ModelState.IsValid)
             {

@@ -27,8 +27,6 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/Timer.css" />
 
-
-
 </head>
 <body>
     <section id="hero">
@@ -51,7 +49,7 @@
             </div>
         </header><!-- End Header -->
 
-        
+
         <section id="hero" class="d-flex align-items-center">
             <div class="container">
                 <div class="row">
@@ -60,15 +58,6 @@
                         <h2>Acces the button below to measure the interview session</h2>
                         <div class="d-flex justify-content-center justify-content-lg-start">
                             <form asp-action="Create" method="post">
-                                @if (ViewBag.IsStarted)
-                                {
-                                    <input hidden name="isStart" value="true"/>
-                                }
-                                else 
-                                {
-                                    <input hidden name="isStart" value="false" />
-                                }
-
                                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                 <div class="form-group">
                                     <label asp-for="User_Id" class="control-label"></label>
@@ -81,12 +70,10 @@
                                         var minutes = Math.Floor((totalSeconds - (hours * 3600)) / 60);
                                         var seconds = totalSeconds % 60;
                                         <div class="time">@string.Format("{0:00}",hours):@string.Format("{0:00}", minutes):@string.Format("{0:00}", seconds)</div>
+                                        <div class="controls">
+                                            <input id="start" type="submit" style="width: 100px; cursor: pointer;" value="@(ViewBag.hasStarted ? "Stop" : "Start")" class="@(ViewBag.hasStarted ? "btn btn-danger" : "btn btn-success")" />
+                                        </div>
                                     }
-
-                                    <div class="controls">
-                                        <input id="start" type="submit" style="width: 100px; cursor: pointer;" value="Start" class="btn btn-success" onclick="CallStopFromStart()" />
-                                        <button id="stop" type="submit" style="width: 100px;" value="Stop" class="btn btn-danger" onclick="CallStartFromStop()" hidden>Stop</button>
-                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -147,13 +134,27 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-
+    <script>
+        window.onload = function() {
+            console.log('onload');
+            if (@Convert.ToInt16(ViewBag.hasStarted)) {
+                console.log('has Started');
+                startTimer(@ViewBag.Timer);
+            } else {
+                console.log('not started');
+                stopTimer()
+            }
+        };
+    </script>
 </body>
 
 </html>
 
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
 

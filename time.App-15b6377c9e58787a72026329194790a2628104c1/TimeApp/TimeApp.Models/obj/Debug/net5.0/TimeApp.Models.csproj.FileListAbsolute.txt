@@ -153,3 +153,15 @@ C:\Users\Lenovo\Desktop\20.8.2022\time.App-15b6377c9e58787a72026329194790a262810
 C:\Users\Lenovo\Desktop\20.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.dll
 C:\Users\Lenovo\Desktop\20.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\ref\TimeApp.Models.dll
 C:\Users\Lenovo\Desktop\20.8.2022\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.pdb
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\bin\Debug\net5.0\TimeApp.Models.deps.json
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\bin\Debug\net5.0\TimeApp.Models.dll
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\bin\Debug\net5.0\TimeApp.Models.pdb
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.csproj.AssemblyReference.cache
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.AssemblyInfoInputs.cache
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.AssemblyInfo.cs
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.dll
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\refint\TimeApp.Models.dll
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.pdb
+C:\Users\drenh\source\repos\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\ref\TimeApp.Models.dll
