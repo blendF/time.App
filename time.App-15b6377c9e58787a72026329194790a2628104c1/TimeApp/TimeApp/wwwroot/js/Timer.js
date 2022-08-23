@@ -31,9 +31,3 @@ function stopTimer() {
     clearInterval(interval);
     interval = null;
 }
-
-function reset() {
-    stop();
-    seconds = 0;
-    time_el.innerText = '00:00:00';
-}

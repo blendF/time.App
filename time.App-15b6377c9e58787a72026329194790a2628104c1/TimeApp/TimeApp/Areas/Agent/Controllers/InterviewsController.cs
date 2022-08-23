@@ -41,6 +41,8 @@ namespace TimeApp.Areas.Agent.Controllers
         {
             if (ModelState.IsValid)
             {
+
+                TempData["success"] = "Intervistat u shtuan";
                 interview.Data = DateTime.Now;
                 _context.Add(interview);
                 await _context.SaveChangesAsync();

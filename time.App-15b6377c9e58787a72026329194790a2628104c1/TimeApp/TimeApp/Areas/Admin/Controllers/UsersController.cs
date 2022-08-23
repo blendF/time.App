@@ -64,6 +64,7 @@ namespace TimeApp.Areas.Admin.Controllers
             {
                 _context.Add(user);
                 await _context.SaveChangesAsync();
+                TempData["success"] = "Keni krijuar me sukses...";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["Language_Id"] = new SelectList(_context.Languages, "Id", "LanguageType", user.Language_Id);
@@ -101,6 +102,8 @@ namespace TimeApp.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
+
+                TempData["success"] = "Keni edituar me sukses...";
                 try
                 {
                     _context.Update(user);
@@ -136,23 +139,25 @@ namespace TimeApp.Areas.Admin.Controllers
                 .Include(u => u.Language)
                 .Include(u => u.Role)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (user == null)
             {
                 return NotFound();
             }
-
             return View(user);
         }
 
-        // POST: Admin/Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+
+            TempData["success"] = "Keni fshir me sukses...";
             var user = await _context.Users.FindAsync(id);
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+
         }
 
         private bool UserExists(int id)
