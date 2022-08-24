@@ -48,4 +48,17 @@
     <Folder Include="wwwroot\lib\jquery\dist\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\timeappicon.webp" />
+    <None Include="wwwroot\images\treedev.webp" />
+    <None Include="wwwroot\plugins\aos\aos.js" />
+    <None Include="wwwroot\plugins\bootstrap\bootstrap.min.js" />
+    <None Include="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont3e6e.svg" />
+    <None Include="wwwroot\plugins\font-awesome\fonts\fontawesome-webfont3e6e.woff2" />
+    <None Include="wwwroot\plugins\google-map\gmap.js" />
+    <None Include="wwwroot\plugins\jQuery\jquery.min.js" />
+    <None Include="wwwroot\plugins\slick\slick.min.js" />
+    <None Include="wwwroot\plugins\venobox\venobox.min.js" />
+  </ItemGroup>
+
 </Project>

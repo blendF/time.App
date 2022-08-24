@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,19 +10,20 @@
     <link href="~/lib/datatables/css/jquery.dataTables.css" rel="stylesheet" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link rel="stylesheet" href="~/css/Tempate.css" />
-
+    <link href="~/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="preloader">
-        <img src="images/preloader.gif" alt="preloader" class="img-fluid" />
+        <img src="~/img/preloader.gif" alt="preloader" class="img-fluid" />
     </div>
+  
 
     <div class="naviagtion fixed-top transition">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a class="navbar-brand p-0" href="index.html">
-                    <img src="./images/logotimeapp.png" alt="Agico" width="100px" />
+                <a class="navbar-brand p-0" href="#">
+                    <img src="~/img/logotimeapp.png" style="width: 100px" />
                 </a>
                 <button class="navbar-toggler"
                         type="button"
@@ -56,13 +57,14 @@
                             <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Interviews" asp-action="Create">Interview</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-outline-primary text-white ml-3">Login</a>
-                    <a href="#" class="btn btn-outline-primary text-white ml-3">Register</a>
+
+                    <a class="btn btn-outline-primary text-white ml-3" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                    <a class="btn btn-outline-primary text-white ml-3" asp-area="Identity" asp-page="/Account/Register">Register</a>
                 </div>
             </nav>
         </div>
     </div>
-   
+
 
     <section class="page-title bg-cover overflow-hidden backgroundStyle">
         <div class="container">
@@ -75,19 +77,6 @@
                         </main>
                     </div>
                 </div>
-                <div class="col-lg-2 ml-auto align-self-end">
-                    <nav class="position-relative zindex-1" aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-lg-end bg-transparent mb-4 px-0">
-                            <li class="breadcrumb-item">
-                                <a href="index.html" class="text-white">Home</a>
-                            </li>
-                            <li class="breadcrumb-item text-white fw-bold"
-                                aria-current="page">
-                                About Us
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
             </div>
         </div>
     </section>
@@ -96,7 +85,7 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-md-5 mb-4 mb-md-0">
-                        <img src="./images/logotimeapp.png" class="mb-4" alt="agico" />
+                        <img src="~/img/logotimeapp.png" style="width: 286px !important; height: 196px !important;" class="mb-4" alt="agico" />
                         <p class="text-light mb-4">
                             Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm
                             tempor incididunt ut labore dolore magna aliqua enim ad minim
@@ -106,23 +95,22 @@
                         </p>
                         <ul class="list-inline social-icons">
                             <li class="list-inline-item">
-                                <a href="http://facebook.com/themefisher" target="_blank">
+                                <a >
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="http://twitter.com/themefisher" target="_blank">
+                                <a>
                                     <i class="fa fa-twitter"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA/featured"
-                                   target="_blank">
+                                <a >
                                     <i class="fa fa-youtube"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="http://github.com/themefisher" target="_blank">
+                                <a>
                                     <i class="fa fa-github"></i>
                                 </a>
                             </li>
@@ -132,61 +120,34 @@
                         <h4 class="text-white mb-4">Services</h4>
                         <ul class="list-styled list-hover-underline">
                             <li class="mb-3 text-light">
-                                <a href="about.html" class="text-light">Company History</a>
+                                <a  class="text-light">Company History</a>
                             </li>
                             <li class="mb-3 text-light">
-                                <a href="about.html" class="text-light">About us</a>
+                                <a  class="text-light">About us</a>
                             </li>
                             <li class="mb-3 text-light">
-                                <a href="contact.html" class="text-light">Contact us</a>
+                                <a  class="text-light">Contact us</a>
                             </li>
                             <li class="mb-3 text-light">
-                                <a href="services.html" class="text-light">Services</a>
+                                <a  class="text-light">Services</a>
                             </li>
                             <li class="mb-3 text-light">
-                                <a href="#" class="text-light">Privacy Policy</a>
+                                <a  class="text-light">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <h4 class="text-white mb-4">Contact Info</h4>
                         <p class="text-light">
+                            <i class="fa fa-location-arrow"></i>
                             9567 Turner Trace Apt. 466 North Willie, BC C3G8A4
                         </p>
                         <ul class="list-unstyled">
                             <li class="mb-3">
-                                <a class="text-light" href="tel:+211234565523">+21 123 456 5523</a>
+                               <a class="fa fa-android" style="font-size: 15px"></a><a class="text-light" href="tel:+211234565523">+21 123 456 5523</a>
                             </li>
                             <li class="mb-3">
-                                <a class="text-light" href="mailto:info@agico.com">info@agico.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                        <p class="mb-0 text-light">
-                            Copyright &copy;
-                            <script>
-                                var CurrentYear = new Date().getFullYear();
-                                document.write(CurrentYear);
-                            </script>
-                            a theme by
-                            <a href="https://themefisher.com/">themefisher.com</a>
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-md-right text-center">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="#" class="text-light">Terms of Service</a>
-                            </li>
-                            <li class="list-inline-item">
-                                | &nbsp;<a href="#" class="text-light">Privacy Policy</a>
+                                <i class="fa fa-address-card" style="padding-right: 5px !important;"><a class="text-light">info@agico.com</a></i>
                             </li>
                         </ul>
                     </div>
@@ -196,21 +157,20 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="plugins/jQuery/jquery.min.js"></script>
+    <script src="~/plugins/jQuery/jquery.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="~/plugins/bootstrap/bootstrap.min.js"></script>
     <!-- slick -->
-    <script src="plugins/slick/slick.min.js"></script>
+    <script src="~/plugins/slick/slick.min.js"></script>
     <!-- venobox -->
-    <script src="plugins/venobox/venobox.min.js"></script>
+    <script src="~/plugins/venobox/venobox.min.js"></script>
     <!-- Aos -->
-    <script src="plugins/aos/aos.js"></script>
+    <script src="~/plugins/aos/aos.js"></script>
     <!-- google map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
-    <script src="plugins/google-map/gmap.js"></script>
+    <script src="~/plugins/google-map/gmap.js"></script>
     <!-- Main Script -->
     <script src="js/script.js"></script>
-
     <script src="~/js/site.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

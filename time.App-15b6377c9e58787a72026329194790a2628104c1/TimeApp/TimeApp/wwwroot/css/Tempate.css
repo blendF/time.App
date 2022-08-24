@@ -537,8 +537,6 @@ select {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* pulse in SVG */
-    /* pulse in CSS */
 }
 
     .pulse-box svg.pulse-svg {
@@ -870,8 +868,6 @@ select {
     color: inherit;
 }
 
-/* /page title */
-/* form style */
 .form-control {
     border: 0;
     height: 60px;

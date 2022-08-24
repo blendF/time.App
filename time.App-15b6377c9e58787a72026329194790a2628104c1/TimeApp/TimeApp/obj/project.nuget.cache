@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qkTxiQc4U1TuPCaIv76V7E5hU7vHwD2uj1FSr0eun970xSx1bKuXsuWUPNt/RqquKqWh7qwHbnkCWXaUqHiwoA==",
+  "dgSpecHash": "wy4wRsANA5R4J4JzqV27LtdaNe2b1dlbpc/QglO3PWELiwagXPeMcP/iZA7zXSt76VxSbID7mwxHLEWKpkdjPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\24.08.2022\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\TimeApp\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
