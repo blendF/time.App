@@ -9,55 +9,208 @@
     @*<link rel="stylesheet" href="~/css/Timer.css"/>*@
     <link href="~/lib/datatables/css/jquery.dataTables.css" rel="stylesheet" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="Admin" asp-controller="Home" asp-action="Index">TimeApp</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Users" asp-action="Index">User</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Roles" asp-action="Index">Roles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Languages" asp-action="Index">Languages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Agent" asp-controller="Times" asp-action="Create">Time</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Agent" asp-controller="Interviews" asp-action="Create">Interview</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container-fluid" style="padding-left: -15px !important; padding-right: -15px !important;">
+    <link rel="stylesheet" href="~/css/Tempate.css" />
 
-        <main role="main" class="pb-3">
-            <partial name="_Notification" />
-            @RenderBody()
-        </main>
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="images/preloader.gif" alt="preloader" class="img-fluid" />
     </div>
 
-    <footer class="border-top footer text-muted">
+    <div class="naviagtion fixed-top transition">
         <div class="container">
-            &copy; 2022 - TimeApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a class="navbar-brand p-0" href="index.html">
+                    <img src="./images/logotimeapp.png" alt="Agico" width="100px" />
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navigation"
+                        aria-controls="navigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navigation">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-capitalize" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-capitalize" asp-area="Admin" asp-controller="Users" asp-action="Index">User</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-capitalize" asp-area="Admin" asp-controller="Roles" asp-action="Index">Roles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-capitalize" asp-area="Admin" asp-controller="Languages" asp-action="Index">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Times" asp-action="Create">Time</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Interviews" asp-action="Create">Interview</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary text-white ml-3">Login</a>
+                    <a href="#" class="btn btn-outline-primary text-white ml-3">Register</a>
+                </div>
+            </nav>
         </div>
+    </div>
+   
+
+    <section class="page-title bg-cover overflow-hidden backgroundStyle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="container-fluid" style="padding-left: -15px !important; padding-right: -15px !important;">
+                        <main role="main" class="pb-3">
+                            <partial name="_Notification" />
+                            @RenderBody()
+                        </main>
+                    </div>
+                </div>
+                <div class="col-lg-2 ml-auto align-self-end">
+                    <nav class="position-relative zindex-1" aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-lg-end bg-transparent mb-4 px-0">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="text-white">Home</a>
+                            </li>
+                            <li class="breadcrumb-item text-white fw-bold"
+                                aria-current="page">
+                                About Us
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-secondary pt-lg-5">
+        <section class="section border-bottom border-color">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-5 mb-4 mb-md-0">
+                        <img src="./images/logotimeapp.png" class="mb-4" alt="agico" />
+                        <p class="text-light mb-4">
+                            Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm
+                            tempor incididunt ut labore dolore magna aliqua enim ad minim
+                            veniam quis nostrud exercitation ullamaboris nisi ut
+                            aliquip.exea commodo consequat. Duis aute irure dolor in
+                            reprehenderit.
+                        </p>
+                        <ul class="list-inline social-icons">
+                            <li class="list-inline-item">
+                                <a href="http://facebook.com/themefisher" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://twitter.com/themefisher" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA/featured"
+                                   target="_blank">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://github.com/themefisher" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4 class="text-white mb-4">Services</h4>
+                        <ul class="list-styled list-hover-underline">
+                            <li class="mb-3 text-light">
+                                <a href="about.html" class="text-light">Company History</a>
+                            </li>
+                            <li class="mb-3 text-light">
+                                <a href="about.html" class="text-light">About us</a>
+                            </li>
+                            <li class="mb-3 text-light">
+                                <a href="contact.html" class="text-light">Contact us</a>
+                            </li>
+                            <li class="mb-3 text-light">
+                                <a href="services.html" class="text-light">Services</a>
+                            </li>
+                            <li class="mb-3 text-light">
+                                <a href="#" class="text-light">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <p class="text-light">
+                            9567 Turner Trace Apt. 466 North Willie, BC C3G8A4
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a class="text-light" href="tel:+211234565523">+21 123 456 5523</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="text-light" href="mailto:info@agico.com">info@agico.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                        <p class="mb-0 text-light">
+                            Copyright &copy;
+                            <script>
+                                var CurrentYear = new Date().getFullYear();
+                                document.write(CurrentYear);
+                            </script>
+                            a theme by
+                            <a href="https://themefisher.com/">themefisher.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-light">Terms of Service</a>
+                            </li>
+                            <li class="list-inline-item">
+                                | &nbsp;<a href="#" class="text-light">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- venobox -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- Aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
     <script src="~/js/site.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -66,5 +219,10 @@
     <script src="sweetalert2.all.min.js"></script>
     <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/Template.js"></script>
+
+
+
+
 </body>
 </html>

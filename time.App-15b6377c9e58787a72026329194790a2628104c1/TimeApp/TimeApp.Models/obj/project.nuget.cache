@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V0P/lBGyuMenpN9A7DaWdOzAmcbCACKTlSkXkr384wDWj2hfCixDZxxXiyr822/rx2vMqQ8M82Zf31YdP1XZPg==",
+  "dgSpecHash": "fNC7jhkT2ZfyvOh+MPG47Kj0tFo8W/fBiQu+flzIJmQHn/K2dWTceE6enX4fCNdUL4cDz33VPiS9WgcPKlv74g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\TimeApp\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\24.08.2022\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\sweetalert\\1.0.0\\sweetalert.1.0.0.nupkg.sha512"
   ],
