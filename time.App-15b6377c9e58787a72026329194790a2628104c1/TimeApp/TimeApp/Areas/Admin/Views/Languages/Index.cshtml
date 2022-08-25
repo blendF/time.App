@@ -5,10 +5,51 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<style>
+    .transparent_rgba {
+        text-decoration: none;
+        margin-bottom: 30px;
+        color: black;
+        float: right;
+        border: none;
+        background-color: snow;
+        font-size: 15px;
+    }
+
+    .title_of_user {
+        color: snow !important;
+        text-decoration: none;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .edit-link {
+        color: green;
+        font-size: 20px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .details-link {
+        color: black;
+        font-size: 20px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .delete-link {
+        font-size: 20px;
+        color: red;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+</style>
+
+<h1 class="title_of_user">Language</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn transbox transparent_rgba" asp-action="Create">Create New Language</a>
 </p>
 <table id="myTable" class="table">
     <thead>
@@ -27,9 +68,9 @@
                     @Html.DisplayFor(modelItem => item.LanguageType)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a class="edit-link fa fa-edit" asp-action="Edit" asp-route-id="@item.Id"></a> 
+                    <a class="details-link fa fa-solid fa-list-ul" asp-action="Details" asp-route-id="@item.Id"></a> 
+                    <a class="delete-link fa fa-trash" asp-action="Delete" asp-route-id="@item.Id"></a>
                 </td>
             </tr>
         }

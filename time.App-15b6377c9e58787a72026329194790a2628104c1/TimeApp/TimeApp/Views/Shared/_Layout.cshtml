@@ -64,15 +64,17 @@
                         <li class="nav-item">
                             <a class="nav-link text-white text-capitalize" asp-area="Admin" asp-controller="Users" asp-action="Index">User</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize" asp-area="Admin" asp-controller="Roles" asp-action="Index">Roles</a>
+                            <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Interviews" asp-action="Index">Interview</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize" asp-area="Admin" asp-controller="Languages" asp-action="Index">Languages</a>
+                            <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Times" asp-action="Index">Time</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Times" asp-action="Create">Time</a>
+                            <a class="nav-link text-white text-capitalize" asp-area="Admin" asp-controller="Languages" asp-action="Index">Languages </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Times" asp-action="Create"> | Time</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Interviews" asp-action="Create">Interview</a>
@@ -85,9 +87,8 @@
                         </li>
 
                     </ul>
+                    <a class="btn btn-outline-primary text-white ml-3" asp-area="Admin" asp-controller="Roles" asp-action="Index">Login</a>
 
-                    <a class="btn btn-outline-primary text-white ml-3" asp-area="Identity" asp-page="/Account/Login">Login</a>
-                    <a class="btn btn-outline-primary text-white ml-3" asp-area="Identity" asp-page="/Account/Register">Register</a>
                 </div>
             </nav>
         </div>

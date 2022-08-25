@@ -22,10 +22,12 @@ div.dataTables_wrapper div.dataTables_length label {
   font-weight: normal;
   text-align: left;
   white-space: nowrap;
+  font-family:monospace;
 }
 div.dataTables_wrapper div.dataTables_length select {
-  width: 75px;
-  display: inline-block;
+    width: 75px;
+    display: inline-block;
+    font-family: monospace;
 }
 div.dataTables_wrapper div.dataTables_filter {
   text-align: right;

@@ -7661,19 +7661,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\spahi\\.nuget\\packages\\": {}
+    "C:\\Users\\RS Computers\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
+      "projectUniqueName": "C:\\Users\\RS Computers\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
       "projectName": "TimeApp",
-      "projectPath": "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
-      "packagesPath": "C:\\Users\\spahi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\obj\\",
+      "projectPath": "C:\\Users\\RS Computers\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
+      "packagesPath": "C:\\Users\\RS Computers\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RS Computers\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\spahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RS Computers\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7687,11 +7687,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.DataAccess\\TimeApp.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.DataAccess\\TimeApp.DataAccess.csproj"
+            "C:\\Users\\RS Computers\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.DataAccess\\TimeApp.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\RS Computers\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.DataAccess\\TimeApp.DataAccess.csproj"
             },
-            "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj": {
-              "projectPath": "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj"
+            "C:\\Users\\RS Computers\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj": {
+              "projectPath": "C:\\Users\\RS Computers\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj"
             }
           }
         }
@@ -7757,7 +7757,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
       }
     }
   }

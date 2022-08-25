@@ -282,3 +282,18 @@ C:\Users\spahi\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628
 C:\Users\spahi\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\refint\TimeApp.DataAccess.dll
 C:\Users\spahi\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.pdb
 C:\Users\spahi\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\ref\TimeApp.DataAccess.dll
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\bin\Debug\net5.0\TimeApp.DataAccess.deps.json
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\bin\Debug\net5.0\TimeApp.DataAccess.dll
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\bin\Debug\net5.0\ref\TimeApp.DataAccess.dll
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\bin\Debug\net5.0\TimeApp.DataAccess.pdb
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\bin\Debug\net5.0\TimeApp.Models.dll
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\bin\Debug\net5.0\TimeApp.Models.pdb
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.csproj.AssemblyReference.cache
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.AssemblyInfoInputs.cache
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.AssemblyInfo.cs
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.csproj.CopyComplete
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.dll
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\ref\TimeApp.DataAccess.dll
+C:\Users\RS Computers\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.DataAccess\obj\Debug\net5.0\TimeApp.DataAccess.pdb
