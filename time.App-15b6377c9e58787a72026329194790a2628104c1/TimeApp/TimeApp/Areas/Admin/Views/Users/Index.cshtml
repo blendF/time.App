@@ -7,12 +7,41 @@
 @*<link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" />
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js" type="text/javascript" ></script>*@
 
+<style>
+    .transparent_rgba {
+        text-decoration: none;
+        margin-bottom: 30px;
+        color: black;
+        float: right;
+        border: none;
+        background-color: snow;
+        font-size: 15px;
+    }
+    .title_of_user {
+        color: snow !important;
+        text-decoration: none;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 80px;
+        
+    }
+    .edit-link{
+        color: black;
+    }
+    .details-link {
+        color: black;
+    }
+    .delete-link{
+        color: black;
+    }
 
 
-<h1>Index</h1>
+</style>
 
-<p>
-    <a asp-action="Create">Create New</a>
+<h1 class="title_of_user">Users</h1>
+
+<p >
+    <a class="btn transbox transparent_rgba" asp-action="Create">Create New User</a>
 </p>
 <table id="myTable" class="table">
     <thead>
@@ -48,9 +77,9 @@
                 @Html.DisplayFor(modelItem => item.Language.LanguageType)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="edit-link" asp-route-id="@item.Id">Edit</a> |
+                <a class="details-link" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a class="details-link" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

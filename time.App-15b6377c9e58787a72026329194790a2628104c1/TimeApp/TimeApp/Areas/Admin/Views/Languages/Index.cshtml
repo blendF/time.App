@@ -5,10 +5,42 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<style>
+    .transparent_rgba {
+        text-decoration: none;
+        margin-bottom: 30px;
+        color: black;
+        float: right;
+        border: none;
+        background-color: snow;
+        font-size: 15px;
+    }
+
+    .title_of_user {
+        color: snow !important;
+        text-decoration: none;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .edit-link {
+        color: black;
+    }
+
+    .details-link {
+        color: black;
+    }
+
+    .delete-link {
+        color: black;
+    }
+</style>
+
+<h1 class="title_of_user">Language</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn transbox transparent_rgba" asp-action="Create">Create New Language</a>
 </p>
 <table id="myTable" class="table">
     <thead>
