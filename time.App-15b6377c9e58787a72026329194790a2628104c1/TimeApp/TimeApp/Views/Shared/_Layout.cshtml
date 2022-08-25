@@ -12,8 +12,29 @@
     <link rel="stylesheet" href="~/css/Tempate.css" />
     <link href="~/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" />
 </head>
+<style>
 
-<body>
+    #google_translate_element {
+    }
+
+        #google_translate_element select {
+            border-radius: 19px;
+            font-family: Arial;
+            padding: 8px;
+            border: none;
+            border: 1px solid;
+            border-color: cyan;
+            
+        }
+
+        #google_translate_element div {
+        }
+
+        #google_translate_element span {
+            visibility: hidden;
+        }
+</style>
+<body id="vantaWaves">
     <div class="preloader">
         <img src="~/img/preloader.gif" alt="preloader" class="img-fluid" />
     </div>
@@ -36,7 +57,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse text-center" id="navigation">
-                    <ul class="navbar-nav mx-auto"> 
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link text-white text-capitalize" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -56,6 +77,13 @@
                         <li class="nav-item">
                             <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Interviews" asp-action="Create">Interview</a>
                         </li>
+                       
+                           
+                        <li class="nav-item">
+                            <div style="margin-top: 14px;" id="google_translate_element"></div>
+                   
+                        </li>
+
                     </ul>
 
                     <a class="btn btn-outline-primary text-white ml-3" asp-area="Identity" asp-page="/Account/Login">Login</a>
@@ -179,7 +207,17 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="~/js/Template.js"></script>
 
+    
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
 
+    </script>
 
 
 </body>

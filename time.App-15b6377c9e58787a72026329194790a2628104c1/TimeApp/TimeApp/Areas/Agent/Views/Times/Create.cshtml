@@ -6,9 +6,9 @@
 }
 
 
+
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>
         Interview
@@ -45,6 +45,11 @@
                 max-width: 500px;
             }
 
+        body, html {
+            padding: 0 !important;
+            margin: 0 !important;
+            background: #000;
+        }
 
 
 
@@ -53,13 +58,13 @@
 
 
 </head>
-<body>
+<body id="clouds">
     <div class="preloader">
         <img src="~/img/preloader.gif" alt="preloader" class="img-fluid" />
     </div>
 
-    <section id="hero" style="background: linear-gradient(80deg, #0030cc 0%, #00a4db 100%);">
-        <header id="header" class="fixed-top " style="background: linear-gradient(80deg, #0030cc 0%, #00a4db 100%);">
+    <section id="hero">
+        <header id="header" class="fixed-top">
             <div class="container d-flex align-items-center">
 
                 <h1 class="logo me-auto"><a href="index.html">Time.App</a></h1>
@@ -117,6 +122,50 @@
             </div>
         </section>
     </section>
+
+
+
+    <!-- Template Main JS File -->
+    <script src="~/js/Template.js"></script>
+    <script src="~/js/Timer.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/js/site.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
+    <script>
+        window.onload = function() {
+            console.log('onload');
+            if (@Convert.ToInt16(ViewBag.hasStarted)) {
+                console.log('has Started');
+                startTimer(@ViewBag.Timer);
+            } else {
+                console.log('not started');
+                stopTimer()
+            }
+        };
+
+        $(window).on('load', function () {
+            $('.preloader').fadeOut(1000);
+        });
+
+        VANTA.WAVES({
+            el: "#clouds",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+
+    </script>
+
     <main id="main">
         <section id="clients" class="clients section-bg">
             <div class="container">
@@ -154,34 +203,6 @@
     </main>
 
 
-
-    <!-- Template Main JS File -->
-    <script src="~/js/Template.js"></script>
-    <script src="~/js/Timer.js"></script>
-    <script src="~/js/main.js"></script>
-    <script src="~/js/site.js"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-
-    <script>
-        window.onload = function() {
-            console.log('onload');
-            if (@Convert.ToInt16(ViewBag.hasStarted)) {
-                console.log('has Started');
-                startTimer(@ViewBag.Timer);
-            } else {
-                console.log('not started');
-                stopTimer()
-            }
-        };
-
-        $(window).on('load', function () {
-            $('.preloader').fadeOut(1000);
-        });
-
-
-    </script>
 </body>
 
 </html>

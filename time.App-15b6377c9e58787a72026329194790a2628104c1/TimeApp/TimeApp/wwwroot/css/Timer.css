@@ -230,7 +230,7 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     transition: all 0.5s;
-    background: rgba(1, 4, 136, 0.9);
+    
 }
 
     #header.header-transparent {
@@ -238,7 +238,7 @@ h6 {
     }
 
     #header.header-scrolled {
-        background: rgba(1, 4, 136, 0.9);
+        
         height: 60px;
     }
 
@@ -522,7 +522,7 @@ h6 {
 #hero {
     width: 100%;
     padding: 10px 0 0 0;
-    background: linear-gradient(80deg, #0030cc 0%, #00a4db 100%) !important;
+    background: none !important;
 }
 
     #hero:before {

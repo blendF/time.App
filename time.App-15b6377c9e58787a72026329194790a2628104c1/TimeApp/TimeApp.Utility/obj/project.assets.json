@@ -37,19 +37,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RS Computers\\.nuget\\packages\\": {}
+    "C:\\Users\\spahi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RS Computers\\Desktop\\time.App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
       "projectName": "TimeApp.Utility",
-      "projectPath": "C:\\Users\\RS Computers\\Desktop\\time.App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
-      "packagesPath": "C:\\Users\\RS Computers\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RS Computers\\Desktop\\time.App\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\obj\\",
+      "projectPath": "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+      "packagesPath": "C:\\Users\\spahi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\spahi\\Desktop\\BlertinHamza\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\RS Computers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\spahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -95,7 +95,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

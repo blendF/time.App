@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\time.App-15b6377c9e58787a72026329194790a2628104c1",
+    "\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp",
+    "\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp",
+    "\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\Views",
+    "\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\Views\\Shared"
   ],
-  "SelectedNode": "\\TimeApp.sln",
+  "SelectedNode": "\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
