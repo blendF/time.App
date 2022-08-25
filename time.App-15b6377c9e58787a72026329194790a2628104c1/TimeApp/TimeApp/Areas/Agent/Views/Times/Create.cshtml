@@ -22,15 +22,44 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/css/Timer.css" />
+
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #0E1E2F;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .preloader img {
+                max-width: 500px;
+            }
+
+
+
+
+    </style>
+
+
 
 </head>
 <body>
-    <section id="hero">
-        <header id="header" class="fixed-top ">
+    <div class="preloader">
+        <img src="~/img/preloader.gif" alt="preloader" class="img-fluid" />
+    </div>
+
+    <section id="hero" style="background: linear-gradient(80deg, #0030cc 0%, #00a4db 100%);">
+        <header id="header" class="fixed-top " style="background: linear-gradient(80deg, #0030cc 0%, #00a4db 100%);">
             <div class="container d-flex align-items-center">
 
                 <h1 class="logo me-auto"><a href="index.html">Time.App</a></h1>
@@ -47,7 +76,8 @@
                 </nav>
 
             </div>
-        </header><!-- End Header -->
+        </header>
+        <!-- End Header -->
 
 
         <section id="hero" class="d-flex align-items-center">
@@ -69,7 +99,7 @@
                                         var hours = Math.Floor(totalSeconds / 3600);
                                         var minutes = Math.Floor((totalSeconds - (hours * 3600)) / 60);
                                         var seconds = totalSeconds % 60;
-                                        <div class="time">@string.Format("{0:00}",hours):@string.Format("{0:00}", minutes):@string.Format("{0:00}", seconds)</div>
+                                        <div class="time">@string.Format("{0:00}", hours):@string.Format("{0:00}", minutes):@string.Format("{0:00}", seconds)</div>
                                         <div class="controls">
                                             <input id="start" type="submit" style="width: 100px; cursor: pointer;" value="@(ViewBag.hasStarted ? "Stop" : "Start")" class="@(ViewBag.hasStarted ? "btn btn-danger" : "btn btn-success")" />
                                         </div>
@@ -123,10 +153,10 @@
         </section>
     </main>
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-    <div id="preloader"></div>
+
 
     <!-- Template Main JS File -->
+    <script src="~/js/Template.js"></script>
     <script src="~/js/Timer.js"></script>
     <script src="~/js/main.js"></script>
     <script src="~/js/site.js"></script>
@@ -145,6 +175,12 @@
                 stopTimer()
             }
         };
+
+        $(window).on('load', function () {
+            $('.preloader').fadeOut(1000);
+        });
+
+
     </script>
 </body>
 

@@ -17,12 +17,12 @@
     <div class="preloader">
         <img src="~/img/preloader.gif" alt="preloader" class="img-fluid" />
     </div>
-  
+
 
     <div class="naviagtion fixed-top transition">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a class="navbar-brand p-0" href="#">
+                <a class="navbar-brand p-0" asp-area="" asp-controller="Home">
                     <img src="~/img/logotimeapp.png" style="width: 100px" />
                 </a>
                 <button class="navbar-toggler"
@@ -36,7 +36,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse text-center" id="navigation">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav mx-auto"> 
                         <li class="nav-item">
                             <a class="nav-link text-white text-capitalize" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -64,8 +64,6 @@
             </nav>
         </div>
     </div>
-
-
     <section class="page-title bg-cover overflow-hidden backgroundStyle">
         <div class="container">
             <div class="row">
@@ -95,7 +93,7 @@
                         </p>
                         <ul class="list-inline social-icons">
                             <li class="list-inline-item">
-                                <a >
+                                <a>
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
@@ -105,7 +103,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a >
+                                <a>
                                     <i class="fa fa-youtube"></i>
                                 </a>
                             </li>
@@ -120,19 +118,19 @@
                         <h4 class="text-white mb-4">Services</h4>
                         <ul class="list-styled list-hover-underline">
                             <li class="mb-3 text-light">
-                                <a  class="text-light">Company History</a>
+                                <a class="text-light">Company History</a>
                             </li>
                             <li class="mb-3 text-light">
-                                <a  class="text-light">About us</a>
+                                <a class="text-light">About us</a>
                             </li>
                             <li class="mb-3 text-light">
-                                <a  class="text-light">Contact us</a>
+                                <a class="text-light">Contact us</a>
                             </li>
                             <li class="mb-3 text-light">
-                                <a  class="text-light">Services</a>
+                                <a class="text-light">Services</a>
                             </li>
                             <li class="mb-3 text-light">
-                                <a  class="text-light">Privacy Policy</a>
+                                <a class="text-light">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
@@ -144,7 +142,7 @@
                         </p>
                         <ul class="list-unstyled">
                             <li class="mb-3">
-                               <a class="fa fa-android" style="font-size: 15px"></a><a class="text-light" href="tel:+211234565523">+21 123 456 5523</a>
+                                <a class="fa fa-android" style="font-size: 15px"></a><a class="text-light" href="tel:+211234565523">+21 123 456 5523</a>
                             </li>
                             <li class="mb-3">
                                 <i class="fa fa-address-card" style="padding-right: 5px !important;"><a class="text-light">info@agico.com</a></i>

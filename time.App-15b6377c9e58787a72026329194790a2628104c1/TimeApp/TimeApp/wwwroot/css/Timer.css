@@ -484,8 +484,7 @@ h6 {
         z-index: 99;
         opacity: 1;
         visibility: visible;
-        background: #fff;
-        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        background-image: linear-gradient(80deg, #0030cc 0%, #00a4db 100%); box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     }
 
         .navbar-mobile .dropdown ul li,
@@ -522,22 +521,19 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    background: url("../img/hero-bg.jpg");
-    position: relative;
     padding: 10px 0 0 0;
+    background: linear-gradient(80deg, #0030cc 0%, #00a4db 100%) !important;
 }
 
     #hero:before {
         content: "";
-        background: rgba(2, 5, 161, 0.91);
-        position: absolute;
         bottom: 0;
         top: 0;
         left: 0;
         right: 0;
     }
 
-    #hero h1 {
+    #hero h1 {  
         margin: 0 0 20px 0;
         font-size: 48px;
         font-weight: 700;
@@ -585,7 +581,7 @@ h6 {
 
 @media (max-width: 991px) {
     #hero {
-        padding-top: 80px;
+        padding-top: 10px;
     }
 
         #hero .animated {

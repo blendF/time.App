@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using TimeApp.Models;
 
 namespace TimeApp.Areas.Admin.Controllers
 {
+    //[Authorize] //duhet me qen i login per me pa kete kontroller
     [Area("Admin")]
     public class UsersController : Controller
     {
@@ -24,10 +26,10 @@ namespace TimeApp.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Users.Include(u => u.Language).Include(u => u.Role);
-            return View(await applicationDbContext.ToListAsync());
+            return View(await applicationDbContext.ToListAsync()); 
         }
-
-        // GET: Admin/Users/Details/5
+     
+  // GET: Admin/Users/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
