@@ -7379,6 +7379,21 @@ C:\Users\Lenovo\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c
 C:\Users\Lenovo\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Lenovo\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Views\Shared\_AgentLayout.cshtml.g.cs
 C:\Users\Lenovo\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Views\Shared\_Notification.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\Lenovo\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 C:\Users\Lenovo\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Lenovo\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+=======
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.csproj.AssemblyReference.cache
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.AssemblyInfoInputs.cache
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.AssemblyInfo.cs
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.csproj.CoreCompileInputs.cache
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.RazorAssemblyInfo.cache
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.RazorAssemblyInfo.cs
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.dll
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\ref\TimeApp.dll
+C:\Users\RS Computers\Desktop\time.App\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp\obj\Debug\net5.0\TimeApp.pdb
+>>>>>>> 0a2bad33d21d028d557927447c17780aab29f1d8
