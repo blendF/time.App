@@ -6,7 +6,6 @@
     <title>@ViewData["Title"] - TimeApp</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    @*<link rel="stylesheet" href="~/css/Timer.css"/>*@
     <link href="~/lib/datatables/css/jquery.dataTables.css" rel="stylesheet" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link rel="stylesheet" href="~/css/Tempate.css" />
@@ -14,25 +13,63 @@
 </head>
 <style>
 
-    #google_translate_element {
+
+
+    #google_translate_element select {
+        border-radius: 19px;
+        font-family: Arial;
+        padding: 8px;
+        border: none;
+        border: 1px solid;
+        border-color: cyan;
     }
 
-        #google_translate_element select {
-            border-radius: 19px;
-            font-family: Arial;
-            padding: 8px;
-            border: none;
-            border: 1px solid;
-            border-color: cyan;
-            
+
+    #google_translate_element span {
+        visibility: hidden;
+    }
+
+    .google_translate_element {
+        display: none !important;
+    }
+
+        .google_translate_element:hover {
+            display: none !important;
         }
 
-        #google_translate_element div {
+    .google_translate_element-highlight {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    body {
+        top: 0px !important;
+    }
+    .goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img {
+        display: none !important;
+    }
+
+    .goog-tooltip {
+        display: none !important;
+    }
+
+        .goog-tooltip:hover {
+            display: none !important;
         }
 
-        #google_translate_element span {
-            visibility: hidden;
-        }
+    .goog-text-highlight {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    body {
+        top: 0px !important;
+    }
+    #targetLanguage{
+        visibility:hidden;   
+    }
 </style>
 <body id="vantaWaves">
     <div class="preloader">
@@ -74,16 +111,16 @@
                             <a class="nav-link text-white text-capitalize" asp-area="Admin" asp-controller="Languages" asp-action="Index">Languages </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Times" asp-action="Create"> | Time</a>
+                            <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Times" asp-action="Create">Time</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white text-capitalize" asp-area="Agent" asp-controller="Interviews" asp-action="Create">Interview</a>
                         </li>
-                       
-                           
+
+
                         <li class="nav-item">
                             <div style="margin-top: 14px;" id="google_translate_element"></div>
-                   
+
                         </li>
 
                     </ul>
@@ -208,7 +245,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="~/js/Template.js"></script>
 
-    
+
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
         function googleTranslateElementInit() {

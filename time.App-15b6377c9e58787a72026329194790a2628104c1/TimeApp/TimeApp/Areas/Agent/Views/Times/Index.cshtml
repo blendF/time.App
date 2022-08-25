@@ -5,12 +5,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1 class="title_of_user">Users</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create"></a>
 </p>
-<table class="table">
+<table  id="myTable" class="table">
     <thead>
         <tr>
             <th>
@@ -32,9 +32,9 @@
                 @Html.DisplayFor(modelItem => item.User.Password)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="edit-link fa fa-edit"  asp-action="Edit" asp-route-id="@item.Id"></a> |
+                <a  class="details-link fa fa-solid fa-list-ul" asp-action="Details" asp-route-id="@item.Id"></a> |
+                <a  class="delete-link fa fa-trash" asp-action="Delete" asp-route-id="@item.Id"></a>
             </td>
         </tr>
 }

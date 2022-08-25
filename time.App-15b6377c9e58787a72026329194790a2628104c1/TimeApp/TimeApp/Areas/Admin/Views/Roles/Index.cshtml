@@ -16,7 +16,8 @@
     <link href="~/css/Login.css" rel="stylesheet" />
     <title>Sign in & Sign up Form</title>
 </head>
-<body>
+        
+<body id="waves">
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
@@ -110,7 +111,21 @@
             </div>
         </div>
     </div>
-
+    <script>
+        VANTA.WAVES({
+            el: "#waves",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+    </script>
     <script src="~/js/Login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
 </body>
 </html>

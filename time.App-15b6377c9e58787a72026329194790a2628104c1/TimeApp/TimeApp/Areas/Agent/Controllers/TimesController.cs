@@ -30,7 +30,7 @@ namespace TimeApp.Areas.Agent.Controllers
         // GET: Agent/Times/Create
         public async Task<IActionResult> CreateAsync(int userId = 1)
         {
-            //todo: kur te rregullohet authentikimi e hjekni userId
+            //todo: kur te rregullohet authentikimi e userId largohet
             ViewData["User_Id"] = new SelectList(_context.Users, "Id", "Username");
             var userTimes = await _context.Times.Where(time => time.User_Id == userId && time.DateTime > DateTime.Today).ToListAsync();
             var seconds = GetSeconds(userTimes);
