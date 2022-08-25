@@ -24,14 +24,25 @@
         margin-bottom: 80px;
 
     }
-    .edit-link{
-        color: black;
+    .edit-link {
+        color: green;
+        font-size: 20px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
+
     .details-link {
         color: black;
+        font-size: 20px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
-    .delete-link{
-        color: black;
+
+    .delete-link {
+        font-size: 20px;
+        color: red;
+        margin-left: 8px;
+        margin-right: 8px;
     }
     </style>
 
@@ -57,9 +68,9 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td >
-                    <a style="color:black !important;" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a style="color:black !important;" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a style="color:black !important;" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a class="edit-link fa fa-edit" asp-action="Edit" asp-route-id="@item.Id"></a> 
+                    <a class="details-link fa fa-solid fa-list-ul" asp-action="Details" asp-route-id="@item.Id"></a> 
+                    <a class="delete-link fa fa-trash" asp-action="Delete" asp-route-id="@item.Id"></a>
                 </td>
             </tr>
         }
