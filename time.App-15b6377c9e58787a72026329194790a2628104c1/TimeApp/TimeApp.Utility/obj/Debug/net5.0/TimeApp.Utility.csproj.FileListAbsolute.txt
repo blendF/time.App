@@ -226,3 +226,15 @@ C:\Users\hp\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104
 C:\Users\hp\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.dll
 C:\Users\hp\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\ref\TimeApp.Utility.dll
 C:\Users\hp\Desktop\BlertinHamza\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.pdb
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\bin\Debug\net5.0\TimeApp.Utility.deps.json
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\bin\Debug\net5.0\TimeApp.Utility.dll
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\bin\Debug\net5.0\TimeApp.Utility.pdb
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.csproj.AssemblyReference.cache
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.AssemblyInfoInputs.cache
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.AssemblyInfo.cs
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.csproj.CoreCompileInputs.cache
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.dll
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\refint\TimeApp.Utility.dll
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\TimeApp.Utility.pdb
+C:\Users\spahi\Desktop\Coli\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Utility\obj\Debug\net5.0\ref\TimeApp.Utility.dll

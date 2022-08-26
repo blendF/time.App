@@ -97,7 +97,7 @@ namespace TimeApp.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
 
-                TempData["success"] = "Keni editu me sukses...";
+                TempData["success"] = "Keni edituar me sukses...";
                 try
                 {
                     _context.Update(language);
@@ -143,7 +143,7 @@ namespace TimeApp.Areas.Admin.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
 
-            TempData["success"] = "Keni fshi me sukses...";
+            TempData["success"] = "Keni fshire me sukses...";
             var language = await _context.Languages.FindAsync(id);
             _context.Languages.Remove(language);
             await _context.SaveChangesAsync();

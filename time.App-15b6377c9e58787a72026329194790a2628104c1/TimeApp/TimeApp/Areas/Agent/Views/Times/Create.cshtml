@@ -14,6 +14,8 @@
         Interview
     </title>
 
+      <link rel="icon" type="image/x-icon" href="~/Images/logotimeapp.png">
+
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="stilizimi.css">
@@ -49,6 +51,7 @@
             padding: 0 !important;
             margin: 0 !important;
             background: #000;
+            color: white;
         }
 
 
@@ -65,7 +68,7 @@
 
     <section id="hero">
         <header id="header" class="fixed-top">
-            <div class="container d-flex align-items-center">
+            <div class="container d-flex align-items-center" style="background: black; opacity: 0.5;">
 
                <a class="navbar-brand p-0" asp-controller="Home" asp-action="Index">
                     <img src="~/img/logotimeapp.png" style="width: 100px" />
@@ -96,13 +99,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                        <h1>Keep track of your work, with TimeApp</h1>
-                        <h2>Acces the button below to measure the interview session</h2>
+                        <h2 style="margin-top: 50px;">Acces the button below to measure the interview session</h2>
                         <div class="d-flex justify-content-center justify-content-lg-start">
                             <form asp-action="Create" method="post">
                                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                 <div class="form-group">
-                                    <label asp-for="User_Id" class="control-label"></label>
+                                    <label asp-for="User" class="control-label"></label>
                                     <select asp-for="User_Id" class="form-control" asp-items="ViewBag.User_Id"></select>
                                 </div>
                                 <div class="watch">
@@ -111,10 +113,10 @@
                                         var hours = Math.Floor(totalSeconds / 3600);
                                         var minutes = Math.Floor((totalSeconds - (hours * 3600)) / 60);
                                         var seconds = totalSeconds % 60;
-                                        <div class="time">@string.Format("{0:00}", hours):@string.Format("{0:00}", minutes):@string.Format("{0:00}", seconds)</div>
-                                        <div class="controls">
-                                            <input id="start" type="submit" style="width: 100px; cursor: pointer;" value="@(ViewBag.hasStarted ? "Stop" : "Start")" class="@(ViewBag.hasStarted ? "btn btn-danger" : "btn btn-success")" />
-                                        </div>
+                                                        <div class="time">@string.Format("{0:00}", hours):@string.Format("{0:00}", minutes):@string.Format("{0:00}", seconds)</div>
+                                                        <div class="controls">
+                                                            <input id="start" type="submit" style="width: 100px; cursor: pointer;" value="@(ViewBag.hasStarted ? "Stop" : "Start")" class="@(ViewBag.hasStarted ? "btn btn-danger" : "btn btn-success")" />
+                                                        </div>
                                     }
                                 </div>
                             </form>

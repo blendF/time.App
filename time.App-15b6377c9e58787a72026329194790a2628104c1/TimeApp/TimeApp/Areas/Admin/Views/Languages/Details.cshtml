@@ -5,21 +5,38 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<style>
+    
+    .user_details    {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom:70px;
+        color: snow;
+        margin-top: -50px;
+    }
+    .row{
+        color: snow;
+        font-size: 18px;
+    }
 
-<div>
-    <h4>Language</h4>
-    <hr />
-    <dl class="row">
+    .control-label {
+        color: white;
+    }
+    
+</style>
+
+
+<h1 class="user_details">User Details</h1>
+
+    <d class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.LanguageType)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.LanguageType)
         </dd>
-    </dl>
-</div>
+    </d>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a class="btn btn-primary"   asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
     <a   class="btn btn-primary"  asp-action="Index">Back to List</a>
 </div>
