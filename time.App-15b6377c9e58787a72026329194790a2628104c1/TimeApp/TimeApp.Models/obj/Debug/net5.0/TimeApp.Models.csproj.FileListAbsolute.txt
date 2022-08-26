@@ -249,3 +249,15 @@ C:\Users\hp\Desktop\Daja\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeA
 C:\Users\hp\Desktop\Daja\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.dll
 C:\Users\hp\Desktop\Daja\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\ref\TimeApp.Models.dll
 C:\Users\hp\Desktop\Daja\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.pdb
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\bin\Debug\net5.0\TimeApp.Models.deps.json
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\bin\Debug\net5.0\TimeApp.Models.dll
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\bin\Debug\net5.0\TimeApp.Models.pdb
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.csproj.AssemblyReference.cache
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.AssemblyInfoInputs.cache
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.AssemblyInfo.cs
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.dll
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\refint\TimeApp.Models.dll
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\TimeApp.Models.pdb
+C:\Users\spahi\Desktop\TimeApp\time.App-15b6377c9e58787a72026329194790a2628104c1\TimeApp\TimeApp.Models\obj\Debug\net5.0\ref\TimeApp.Models.dll

@@ -67,9 +67,14 @@
         <header id="header" class="fixed-top ">
             <div class="container d-flex align-items-center">
 
-                <h1 class="logo me-auto"><a href="index.html">Time.App</a></h1>
+                <a class="navbar-brand p-0" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/logotimeapp.png" style="width: 100px" />
+                </a>
                 <nav id="navbar" class="navbar">
                     <ul>
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="Agent" target="_blank" asp-controller="Times" asp-action="Create">Times</a>
                         </li>

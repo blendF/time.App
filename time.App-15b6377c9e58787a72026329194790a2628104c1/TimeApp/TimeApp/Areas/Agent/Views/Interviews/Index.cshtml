@@ -10,7 +10,7 @@
 <p>
     <a asp-action="Create"></a>
 </p>
-<table class="table">
+<table id="myTable" class="table">
     <thead>
         <tr>
             <th>
@@ -22,7 +22,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Data)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -37,12 +36,18 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Data)
             </td>
-            <td>
-                <a  class="edit-link fa fa-edit"  asp-action="Edit" asp-route-id="@item.Id"></a> |
-                <a    class="details-link fa fa-solid fa-list-ul"  asp-action="Details" asp-route-id="@item.Id"></a> |
-                <a  class="delete-link fa fa-trash"   asp-action="Delete" asp-route-id="@item.Id"></a>
-            </td>
+      
         </tr>
 }
     </tbody>
 </table>
+
+
+@section scripts{
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+
+ 
+</script> }

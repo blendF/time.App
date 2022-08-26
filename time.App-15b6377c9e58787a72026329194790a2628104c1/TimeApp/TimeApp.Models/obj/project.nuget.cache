@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iqIoiTg06WAftHBlf0LjQMw7u5xpfhcMUPGj2lJdbrQ/sbUnZabiqjbGFgzJkVyGJULYKzL7wx40ZEglJ2ZLoQ==",
+  "dgSpecHash": "DtLmc68GFs3gbXCPN6FbbWcO1wqw/DrPGpNeJker3oujZv17QJU2+ByVdgRjx9L4KgfyCSa0EMbbbaR6cFk2xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Desktop\\Daja\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
+  "projectFilePath": "C:\\Users\\spahi\\Desktop\\TimeApp\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hp\\.nuget\\packages\\sweetalert\\1.0.0\\sweetalert.1.0.0.nupkg.sha512",
-    "C:\\Users\\hp\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\spahi\\.nuget\\packages\\sweetalert\\1.0.0\\sweetalert.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }
