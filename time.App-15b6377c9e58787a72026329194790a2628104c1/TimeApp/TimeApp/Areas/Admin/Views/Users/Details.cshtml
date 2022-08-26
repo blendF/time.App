@@ -5,10 +5,30 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<style>
+    
+    .user_details    {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom:70px;
+        color: snow;
+        margin-top: -50px;
+    }
+    .row{
+        color: snow;
+        font-size: 18px;
+    }
+
+    .control-label {
+        color: white;
+    }
+    
+</style>
+
+
+<h1 class="user_details">User Details</h1>
 
 <div>
-    <h4>User</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -38,6 +58,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> 
     <a class="btn btn-primary"  asp-action="Index">Back to List</a>
 </div>

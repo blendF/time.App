@@ -5,11 +5,36 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create"></a>
-</p>
+
+
+<style>
+    .transparent_rgba {
+        text-decoration: none;
+        margin-bottom: 30px;
+        color: black;
+        float: right;
+        border: none;
+        background-color: snow;
+        font-size: 15px;
+    }
+
+    h1 {
+        text-decoration: none;
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 50px;
+        color: snow;
+        margin-top: -50px;
+    }
+
+
+
+
+ 
+</style>
+<h1 class="title_of_user">Interviews</h1>
+
 <table id="myTable" class="table">
     <thead>
         <tr>
@@ -25,29 +50,30 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Interviews)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.Username)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-      
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Interviews)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+
+            </tr>
+        }
     </tbody>
 </table>
 
 
 @section scripts{
-<script>
-    $(document).ready(function () {
-        $('#myTable').DataTable();
-    });
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
 
- 
-</script> }
+
+    </script> }
