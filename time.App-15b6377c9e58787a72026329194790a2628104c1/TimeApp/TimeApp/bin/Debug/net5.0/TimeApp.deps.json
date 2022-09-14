@@ -43,6 +43,7 @@
           "SweetAlert": "1.0.0",
           "TimeApp.DataAccess": "1.0.0",
           "TimeApp.Models": "1.0.0",
+          "TimeApp.Utility": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -2005,6 +2006,7 @@
       },
       "TimeApp.Models/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "5.0.17",
           "SweetAlert": "1.0.0"
         },
         "runtime": {
@@ -2012,6 +2014,18 @@
         },
         "compile": {
           "TimeApp.Models.dll": {}
+        }
+      },
+      "TimeApp.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "5.0.17",
+          "SweetAlert": "1.0.0"
+        },
+        "runtime": {
+          "TimeApp.Utility.dll": {}
+        },
+        "compile": {
+          "TimeApp.Utility.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4643,6 +4657,11 @@
       "sha512": ""
     },
     "TimeApp.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TimeApp.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

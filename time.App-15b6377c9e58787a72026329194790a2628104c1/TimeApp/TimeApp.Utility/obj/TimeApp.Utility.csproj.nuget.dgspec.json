@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {}
+    "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {
+    "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
         "projectName": "TimeApp.Utility",
-        "projectPath": "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "SweetAlert": {
               "target": "Package",
               "version": "[1.0.0, )"

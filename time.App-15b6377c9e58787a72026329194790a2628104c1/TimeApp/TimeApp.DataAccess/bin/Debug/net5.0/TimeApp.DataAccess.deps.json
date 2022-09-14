@@ -1103,6 +1103,7 @@
       },
       "TimeApp.Models/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "5.0.12",
           "SweetAlert": "1.0.0"
         },
         "runtime": {

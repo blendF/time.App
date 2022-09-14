@@ -2210,6 +2210,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "5.0.0",
           "SweetAlert": "1.0.0"
         },
         "compile": {
@@ -2217,6 +2218,20 @@
         },
         "runtime": {
           "bin/placeholder/TimeApp.Models.dll": {}
+        }
+      },
+      "TimeApp.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "5.0.0",
+          "SweetAlert": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TimeApp.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TimeApp.Utility.dll": {}
         }
       }
     }
@@ -7644,6 +7659,11 @@
       "type": "project",
       "path": "../TimeApp.Models/TimeApp.Models.csproj",
       "msbuildProject": "../TimeApp.Models/TimeApp.Models.csproj"
+    },
+    "TimeApp.Utility/1.0.0": {
+      "type": "project",
+      "path": "../TimeApp.Utility/TimeApp.Utility.csproj",
+      "msbuildProject": "../TimeApp.Utility/TimeApp.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7657,7 +7677,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "SweetAlert >= 1.0.0",
       "TimeApp.DataAccess >= 1.0.0",
-      "TimeApp.Models >= 1.0.0"
+      "TimeApp.Models >= 1.0.0",
+      "TimeApp.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7666,11 +7687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
       "projectName": "TimeApp",
-      "projectPath": "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\TimeApp.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7687,11 +7708,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.DataAccess\\TimeApp.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.DataAccess\\TimeApp.DataAccess.csproj"
+            "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.DataAccess\\TimeApp.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.DataAccess\\TimeApp.DataAccess.csproj"
             },
-            "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\Final\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj"
+            "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Models\\TimeApp.Models.csproj"
+            },
+            "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\CallCenter\\time.App-15b6377c9e58787a72026329194790a2628104c1\\TimeApp\\TimeApp.Utility\\TimeApp.Utility.csproj"
             }
           }
         }

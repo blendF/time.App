@@ -82,6 +82,10 @@ namespace TimeApp.DataAccess.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -133,6 +137,8 @@ namespace TimeApp.DataAccess.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -162,12 +168,10 @@ namespace TimeApp.DataAccess.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -204,12 +208,10 @@ namespace TimeApp.DataAccess.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -253,6 +255,9 @@ namespace TimeApp.DataAccess.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Languages");
@@ -294,29 +299,6 @@ namespace TimeApp.DataAccess.Migrations
                     b.ToTable("Times");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.TimeAndInterview", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Interview")
-                        .HasColumnType("int");
-
-                    b.Property<int>("User_Id")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("User_Id");
-
-                    b.ToTable("TimeAndInterviews");
-                });
-
             modelBuilder.Entity("TimeApp.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -347,6 +329,34 @@ namespace TimeApp.DataAccess.Migrations
                     b.HasIndex("Role_Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("TimeApp.Models.ApplicationUser", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("LanguageId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StreetAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasIndex("LanguageId");
+
+                    b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -422,17 +432,6 @@ namespace TimeApp.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("TimeApp.Models.TimeAndInterview", b =>
-                {
-                    b.HasOne("TimeApp.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("User_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("TimeApp.Models.User", b =>
                 {
                     b.HasOne("TimeApp.Models.Language", "Language")
@@ -450,6 +449,15 @@ namespace TimeApp.DataAccess.Migrations
                     b.Navigation("Language");
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("TimeApp.Models.ApplicationUser", b =>
+                {
+                    b.HasOne("TimeApp.Models.Language", "Language")
+                        .WithMany()
+                        .HasForeignKey("LanguageId");
+
+                    b.Navigation("Language");
                 });
 #pragma warning restore 612, 618
         }

@@ -15,5 +15,6 @@ namespace TimeApp.Models
         [Display(Name = "Gjuha!")]
         [StringLength(50)]
         public string LanguageType { get; set; }
+        public string Name { get; set; }
     }
 }

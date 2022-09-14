@@ -11,7 +11,8 @@ using TimeApp.Models;
 
 namespace TimeApp.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+
+      [Area("Admin")]
     //[Authorize]
     public class RolesController : Controller
     {

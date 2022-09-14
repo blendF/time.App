@@ -35,6 +35,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TimeApp.DataAccess\TimeApp.DataAccess.csproj" />
     <ProjectReference Include="..\TimeApp.Models\TimeApp.Models.csproj" />
+    <ProjectReference Include="..\TimeApp.Utility\TimeApp.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +49,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Areas\Admin\Views\Languages\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Languages\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Languages\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Languages\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Languages\Index.cshtml" />
     <None Include="wwwroot\images\timeappicon.webp" />
     <None Include="wwwroot\images\treedev.webp" />
     <None Include="wwwroot\plugins\aos\aos.js" />

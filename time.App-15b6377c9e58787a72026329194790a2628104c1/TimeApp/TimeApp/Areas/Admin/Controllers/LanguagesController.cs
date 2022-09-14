@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +11,6 @@ using TimeApp.Models;
 namespace TimeApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    //[Authorize]
     public class LanguagesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -53,6 +51,8 @@ namespace TimeApp.Areas.Admin.Controllers
         }
 
         // POST: Admin/Languages/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,LanguageType")] Language language)
@@ -61,8 +61,6 @@ namespace TimeApp.Areas.Admin.Controllers
             {
                 _context.Add(language);
                 await _context.SaveChangesAsync();
-
-                TempData["success"] = "Keni krijuar me sukses...";
                 return RedirectToAction(nameof(Index));
             }
             return View(language);
@@ -85,6 +83,8 @@ namespace TimeApp.Areas.Admin.Controllers
         }
 
         // POST: Admin/Languages/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,LanguageType")] Language language)
@@ -96,8 +96,6 @@ namespace TimeApp.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-
-                TempData["success"] = "Keni edituar me sukses...";
                 try
                 {
                     _context.Update(language);
@@ -142,8 +140,6 @@ namespace TimeApp.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-
-            TempData["success"] = "Keni fshire me sukses...";
             var language = await _context.Languages.FindAsync(id);
             _context.Languages.Remove(language);
             await _context.SaveChangesAsync();
